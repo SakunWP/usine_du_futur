@@ -1,0 +1,25 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+    }
+
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['JNI/java', 'gen/JNI/java']
+        }
+    }
+
+    namespace 'com.parrot.arsdk.arstream2'
+}
+
+dependencies {
+    implementation project(':libmux')
+    implementation project(':libARSAL')
+}

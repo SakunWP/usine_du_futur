@@ -1,0 +1,20 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARStream/AndroidManifest.xml:2:1-7:12
+INJECTED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARStream/AndroidManifest.xml:2:1-7:12
+	package
+		INJECTED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARStream/AndroidManifest.xml
+	android:versionName
+		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARStream/AndroidManifest.xml:5:5-30
+	xmlns:android
+		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARStream/AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARStream/AndroidManifest.xml:4:5-28
+uses-sdk
+INJECTED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARStream/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARStream/AndroidManifest.xml
+INJECTED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARStream/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARStream/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARStream/AndroidManifest.xml

@@ -1,0 +1,15 @@
+poly1305/libcrypto_la-poly1305.lo: poly1305/poly1305.c \
+  ../include/openssl/poly1305.h ../include/openssl/opensslconf.h \
+  ../include/openssl/opensslfeatures.h \
+  /Users/kjaffres/Library/Android/sdk/ndk/19.2.5345600/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/8.0.2/include/stddef.h \
+  poly1305/poly1305-donna.c
+
+../include/openssl/poly1305.h:
+
+../include/openssl/opensslconf.h:
+
+../include/openssl/opensslfeatures.h:
+
+/Users/kjaffres/Library/Android/sdk/ndk/19.2.5345600/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/8.0.2/include/stddef.h:
+
+poly1305/poly1305-donna.c:

@@ -1,0 +1,237 @@
+# GENERATED FILE, DO NOT EDIT
+
+ifndef ALCHEMY_SDK_ANDROID_armeabi-v7a_INCLUDED
+ALCHEMY_SDK_ANDROID_armeabi-v7a_INCLUDED = 1
+
+LOCAL_PATH := $(call my-dir)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := curl
+LOCAL_SRC_FILES := $(LOCAL_PATH)/usr/lib/libcurl.so
+LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/usr/include
+LOCAL_STATIC_LIBRARIES := libressl-libssl-static \
+	libressl-libcrypto-static
+include $(PREBUILT_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := json
+LOCAL_SRC_FILES := $(LOCAL_PATH)/usr/lib/libjson-c.so
+LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/usr/include
+include $(PREBUILT_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libARCommands
+LOCAL_SRC_FILES := $(LOCAL_PATH)/usr/lib/libarcommands.so
+LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/usr/include
+LOCAL_SHARED_LIBRARIES := libARSAL
+LOCAL_EXPORT_SHARED_LIBRARIES := $(LOCAL_SHARED_LIBRARIES)
+include $(PREBUILT_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libARController
+LOCAL_SRC_FILES := $(LOCAL_PATH)/usr/lib/libarcontroller.so
+LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/usr/include
+LOCAL_SHARED_LIBRARIES := libARSAL \
+	libARDiscovery \
+	libARCommands \
+	libARUtils \
+	libARStream \
+	libARStream2 \
+	libARNetworkAL \
+	libARNetwork \
+	librtsp \
+	libsdp \
+	libfutils \
+	libpomp \
+	libmux \
+	json
+LOCAL_EXPORT_SHARED_LIBRARIES := $(LOCAL_SHARED_LIBRARIES)
+include $(PREBUILT_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libARDataTransfer
+LOCAL_SRC_FILES := $(LOCAL_PATH)/usr/lib/libardatatransfer.so
+LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/usr/include
+LOCAL_SHARED_LIBRARIES := libARSAL \
+	libARDiscovery \
+	libARCommands \
+	libARUtils
+LOCAL_EXPORT_SHARED_LIBRARIES := $(LOCAL_SHARED_LIBRARIES)
+include $(PREBUILT_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libARDiscovery
+LOCAL_SRC_FILES := $(LOCAL_PATH)/usr/lib/libardiscovery.so
+LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/usr/include
+LOCAL_SHARED_LIBRARIES := libARSAL \
+	libARNetwork \
+	libARNetworkAL \
+	libARCommands \
+	libmux \
+	libpomp \
+	json
+LOCAL_EXPORT_SHARED_LIBRARIES := $(LOCAL_SHARED_LIBRARIES)
+include $(PREBUILT_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libARMavlink
+LOCAL_SRC_FILES := $(LOCAL_PATH)/usr/lib/libarmavlink.so
+LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/usr/include \
+	$(LOCAL_PATH)/usr/include/libARMavlink/generated
+LOCAL_SHARED_LIBRARIES := libARSAL
+LOCAL_EXPORT_SHARED_LIBRARIES := $(LOCAL_SHARED_LIBRARIES)
+include $(PREBUILT_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libARMedia
+LOCAL_SRC_FILES := $(LOCAL_PATH)/usr/lib/libarmedia.so
+LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/usr/include
+LOCAL_SHARED_LIBRARIES := libARSAL \
+	libARDiscovery \
+	json
+LOCAL_EXPORT_SHARED_LIBRARIES := $(LOCAL_SHARED_LIBRARIES)
+include $(PREBUILT_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libARNetwork
+LOCAL_SRC_FILES := $(LOCAL_PATH)/usr/lib/libarnetwork.so
+LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/usr/include
+LOCAL_SHARED_LIBRARIES := libARSAL \
+	libARNetworkAL
+LOCAL_EXPORT_SHARED_LIBRARIES := $(LOCAL_SHARED_LIBRARIES)
+include $(PREBUILT_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libARNetworkAL
+LOCAL_SRC_FILES := $(LOCAL_PATH)/usr/lib/libarnetworkal.so
+LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/usr/include
+LOCAL_SHARED_LIBRARIES := libARSAL \
+	libmux \
+	libpomp
+LOCAL_EXPORT_SHARED_LIBRARIES := $(LOCAL_SHARED_LIBRARIES)
+include $(PREBUILT_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libARSAL
+LOCAL_SRC_FILES := $(LOCAL_PATH)/usr/lib/libarsal.so
+LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/usr/include \
+	$(LOCAL_PATH)/usr/include/libARSAL/Config/android
+include $(PREBUILT_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libARStream
+LOCAL_SRC_FILES := $(LOCAL_PATH)/usr/lib/libarstream.so
+LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/usr/include
+LOCAL_SHARED_LIBRARIES := libARSAL \
+	libARNetworkAL \
+	libARNetwork
+LOCAL_EXPORT_SHARED_LIBRARIES := $(LOCAL_SHARED_LIBRARIES)
+include $(PREBUILT_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libARStream2
+LOCAL_SRC_FILES := $(LOCAL_PATH)/usr/lib/libarstream2.so
+LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/usr/include
+LOCAL_SHARED_LIBRARIES := libARSAL \
+	libmux \
+	libpomp \
+	libARMedia
+LOCAL_EXPORT_SHARED_LIBRARIES := $(LOCAL_SHARED_LIBRARIES)
+include $(PREBUILT_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libARUpdater
+LOCAL_SRC_FILES := $(LOCAL_PATH)/usr/lib/libarupdater.so
+LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/usr/include
+LOCAL_SHARED_LIBRARIES := libARSAL \
+	libARDiscovery \
+	libARCommands \
+	libARUtils \
+	libARDataTransfer \
+	libpuf \
+	libmux \
+	libpomp \
+	json
+LOCAL_EXPORT_SHARED_LIBRARIES := $(LOCAL_SHARED_LIBRARIES)
+include $(PREBUILT_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libARUtils
+LOCAL_SRC_FILES := $(LOCAL_PATH)/usr/lib/libarutils.so
+LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/usr/include
+LOCAL_SHARED_LIBRARIES := libARSAL \
+	libARDiscovery \
+	libARCommands \
+	libmux \
+	curl
+LOCAL_EXPORT_SHARED_LIBRARIES := $(LOCAL_SHARED_LIBRARIES)
+include $(PREBUILT_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libfutils
+LOCAL_SRC_FILES := $(LOCAL_PATH)/usr/lib/libfutils.so
+LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/usr/include
+LOCAL_SHARED_LIBRARIES := libulog
+LOCAL_EXPORT_SHARED_LIBRARIES := $(LOCAL_SHARED_LIBRARIES)
+include $(PREBUILT_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libmux
+LOCAL_SRC_FILES := $(LOCAL_PATH)/usr/lib/libmux.so
+LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/usr/include
+LOCAL_SHARED_LIBRARIES := libpomp \
+	libulog
+LOCAL_EXPORT_SHARED_LIBRARIES := $(LOCAL_SHARED_LIBRARIES)
+include $(PREBUILT_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libpomp
+LOCAL_SRC_FILES := $(LOCAL_PATH)/usr/lib/libpomp.so
+LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/usr/include
+LOCAL_SHARED_LIBRARIES := libulog
+LOCAL_EXPORT_SHARED_LIBRARIES := $(LOCAL_SHARED_LIBRARIES)
+include $(PREBUILT_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libpuf
+LOCAL_SRC_FILES := $(LOCAL_PATH)/usr/lib/libpuf.so
+LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/usr/include
+LOCAL_SHARED_LIBRARIES := libulog \
+	libtar
+LOCAL_EXPORT_SHARED_LIBRARIES := $(LOCAL_SHARED_LIBRARIES)
+include $(PREBUILT_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := librtsp
+LOCAL_SRC_FILES := $(LOCAL_PATH)/usr/lib/librtsp.so
+LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/usr/include
+LOCAL_SHARED_LIBRARIES := libpomp \
+	libfutils \
+	libulog
+LOCAL_EXPORT_SHARED_LIBRARIES := $(LOCAL_SHARED_LIBRARIES)
+include $(PREBUILT_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libsdp
+LOCAL_SRC_FILES := $(LOCAL_PATH)/usr/lib/libsdp.so
+LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/usr/include
+LOCAL_SHARED_LIBRARIES := libfutils \
+	libulog
+LOCAL_EXPORT_SHARED_LIBRARIES := $(LOCAL_SHARED_LIBRARIES)
+include $(PREBUILT_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libtar
+LOCAL_SRC_FILES := $(LOCAL_PATH)/usr/lib/libtar.so
+LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/usr/include
+include $(PREBUILT_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libulog
+LOCAL_SRC_FILES := $(LOCAL_PATH)/usr/lib/libulog.so
+LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/usr/include
+include $(PREBUILT_SHARED_LIBRARY)
+
+include $(LOCAL_PATH)/Android-static.mk
+
+endif

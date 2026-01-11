@@ -1,0 +1,26 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+    }
+
+    /* sourceSets.main {
+        jni.srcDirs = [] // This prevents gradle to build jni
+    }*/
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            jni.srcDirs = [] // This prevents gradle to build jni
+            java.srcDirs = ['src/main/java']
+        }
+    }
+
+    namespace 'com.parrot.mux'
+}
+
+dependencies {
+}

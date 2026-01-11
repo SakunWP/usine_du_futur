@@ -1,0 +1,14 @@
+aes/libcrypto_la-aes_ofb.lo: aes/aes_ofb.c ../include/openssl/aes.h \
+  ../include/openssl/opensslconf.h ../include/openssl/opensslfeatures.h \
+  /Users/kjaffres/Library/Android/sdk/ndk/19.2.5345600/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/8.0.2/include/stddef.h \
+  ../include/openssl/modes.h
+
+../include/openssl/aes.h:
+
+../include/openssl/opensslconf.h:
+
+../include/openssl/opensslfeatures.h:
+
+/Users/kjaffres/Library/Android/sdk/ndk/19.2.5345600/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/8.0.2/include/stddef.h:
+
+../include/openssl/modes.h:

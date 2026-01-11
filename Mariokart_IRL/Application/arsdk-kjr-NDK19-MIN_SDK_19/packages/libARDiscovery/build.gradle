@@ -1,0 +1,32 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['JNI/java', 'gen/JNI/java']
+        }
+    }
+    namespace 'com.parrot.arsdk.ardiscovery'
+}
+
+dependencies {
+    implementation project(':libARSAL')
+    implementation project(':libARNetworkAL')
+    implementation project(':libmux')
+    implementation 'com.android.support:support-v4:28.0.0'
+
+    //implementation 'androidx.localbroadcastmanager:localbroadcastmanager:1.0.0'
+
+    //implementation rootProject.ext.jmdnsVersion
+    //implementation rootProject.ext.sanselanVersion
+    implementation 'javax.jmdns:jmdns:3.4.1'
+    implementation  'org.apache.sanselan:sanselan:0.97-incubator'
+}

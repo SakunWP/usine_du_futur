@@ -1,0 +1,50 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+        }
+    }
+    sourceSets {
+        main {
+            jni.srcDirs = [] // This prevents the auto generation of Android.mk
+            jniLibs.srcDir "${project.buildDir}/../../jni/arsdk/libs"
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    namespace 'com.parrot.arsdk'
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation 'junit:junit:4.12'
+    implementation project(':libARSAL')
+    implementation project(':libARCommands')
+    implementation project(':libARNetworkAL')
+    implementation project(':libARNetwork')
+    implementation project(':libARCommands')
+    implementation project(':libARStream')
+    implementation project(':libARStream2')
+    implementation project(':libARDiscovery')
+    implementation project(':libARUtils')
+    implementation project(':libARDataTransfer')
+    implementation project(':libARMedia')
+    implementation project(':libARUpdater')
+    implementation project(':libARMavlink')
+    implementation project(':libARController')
+}

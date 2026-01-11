@@ -1,0 +1,48 @@
+/*
+    Copyright (C) 2014 Parrot SA
+
+    Redistribution and use in source and binary forms, with or without
+    modification, are permitted provided that the following conditions
+    are met:
+    * Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+    * Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the
+    distribution.
+    * Neither the name of Parrot nor the names
+    of its contributors may be used to endorse or promote products
+    derived from this software without specific prior written
+    permission.
+
+    THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+    "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+    LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS
+    FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
+    COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+    INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+    BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS
+    OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED
+    AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+    OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT
+    OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+    SUCH DAMAGE.
+*/
+package com.parrot.arsdk.arcommands;
+
+/**
+ * Interface for the command <code>CalibrationState</code> in feature <code>Rc</code> listener
+ * @author Parrot (c) 2013
+ */
+public interface ARCommandRcCalibrationStateListener {
+
+    /**
+     * Called when a command <code>CalibrationState</code> in feature <code>Rc</code> is decoded
+     * @param _calibration_type Current calibration type\nset to 'none' if no calibration in progress.\nCalibration type.
+     * @param _channel_action Current channel action calibration\nOnly used when calibration_type=min_max.\nChannel action.
+     * @param _required bitfield of required channel actions.\nNeutral channels calibration is always required.\nChannel action.
+     * @param _calibrated bitfield of calibrated channel actions.\nChannel action.
+     * @param _neutral_calibrated 1 if neutral channels are calibrated, 0 otherwise.
+     */
+    void onRcCalibrationStateUpdate (ARCOMMANDS_RC_CALIBRATION_TYPE_ENUM calibration_type, ARCOMMANDS_RC_CHANNEL_ACTION_ENUM channel_action, int required, int calibrated, byte neutral_calibrated);
+}

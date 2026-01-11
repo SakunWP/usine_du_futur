@@ -1,0 +1,52 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/ARSDK3/arsdk/src/main/AndroidManifest.xml:1:1-19:12
+INJECTED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/ARSDK3/arsdk/src/main/AndroidManifest.xml:1:1-19:12
+	package
+		INJECTED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/ARSDK3/arsdk/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/ARSDK3/arsdk/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/ARSDK3/arsdk/src/main/AndroidManifest.xml:3:5-66
+	android:name
+		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/ARSDK3/arsdk/src/main/AndroidManifest.xml:3:22-64
+uses-permission#android.permission.BLUETOOTH
+ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/ARSDK3/arsdk/src/main/AndroidManifest.xml:4:5-67
+	android:name
+		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/ARSDK3/arsdk/src/main/AndroidManifest.xml:4:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/ARSDK3/arsdk/src/main/AndroidManifest.xml:5:5-73
+	android:name
+		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/ARSDK3/arsdk/src/main/AndroidManifest.xml:5:22-71
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/ARSDK3/arsdk/src/main/AndroidManifest.xml:6:5-80
+	android:name
+		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/ARSDK3/arsdk/src/main/AndroidManifest.xml:6:22-78
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/ARSDK3/arsdk/src/main/AndroidManifest.xml:7:5-79
+	android:name
+		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/ARSDK3/arsdk/src/main/AndroidManifest.xml:7:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/ARSDK3/arsdk/src/main/AndroidManifest.xml:8:5-76
+	android:name
+		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/ARSDK3/arsdk/src/main/AndroidManifest.xml:8:22-73
+uses-permission#android.permission.CHANGE_WIFI_MULTICAST_STATE
+ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/ARSDK3/arsdk/src/main/AndroidManifest.xml:9:5-85
+	android:name
+		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/ARSDK3/arsdk/src/main/AndroidManifest.xml:9:22-83
+application
+ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/ARSDK3/arsdk/src/main/AndroidManifest.xml:11:5-17:19
+	android:supportsRtl
+		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/ARSDK3/arsdk/src/main/AndroidManifest.xml:14:9-35
+	android:label
+		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/ARSDK3/arsdk/src/main/AndroidManifest.xml:13:9-41
+	android:allowBackup
+		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/ARSDK3/arsdk/src/main/AndroidManifest.xml:12:9-35
+uses-sdk
+INJECTED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/ARSDK3/arsdk/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/ARSDK3/arsdk/src/main/AndroidManifest.xml
+INJECTED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/ARSDK3/arsdk/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/ARSDK3/arsdk/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/ARSDK3/arsdk/src/main/AndroidManifest.xml

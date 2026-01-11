@@ -1,0 +1,1 @@
+0000000000000000000000000000000000000000 bb593a8d6e61697f23706ba4d0f550f7035b88bf Katia JAFFRES <katia.jaffres@gmail.com> 1735928777 +0100	fetch --quiet --progress github --prune --recurse-submodules=no --tags +refs/heads/*:refs/remotes/github/* +refs/tags/*:refs/tags/*: storing head

@@ -1,0 +1,16 @@
+rc4/libcrypto_la-rc4_skey.lo: rc4/rc4_skey.c ../include/openssl/rc4.h \
+  ../include/openssl/opensslconf.h ../include/openssl/opensslfeatures.h \
+  /Users/kjaffres/Library/Android/sdk/ndk/19.2.5345600/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/8.0.2/include/stddef.h \
+  rc4/rc4_locl.h ../include/openssl/opensslv.h
+
+../include/openssl/rc4.h:
+
+../include/openssl/opensslconf.h:
+
+../include/openssl/opensslfeatures.h:
+
+/Users/kjaffres/Library/Android/sdk/ndk/19.2.5345600/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/8.0.2/include/stddef.h:
+
+rc4/rc4_locl.h:
+
+../include/openssl/opensslv.h:

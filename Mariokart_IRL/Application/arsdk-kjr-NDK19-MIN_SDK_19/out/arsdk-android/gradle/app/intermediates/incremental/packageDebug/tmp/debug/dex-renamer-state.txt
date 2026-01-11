@@ -1,0 +1,4 @@
+#Tue Jul 01 10:14:43 CEST 2025
+base.0=/home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

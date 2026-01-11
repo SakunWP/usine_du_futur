@@ -1,0 +1,39 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.parrot.arsdk" >
+4
+5    <uses-sdk android:minSdkVersion="19" />
+6
+7    <uses-permission android:name="android.permission.INTERNET" />
+7-->/home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/ARSDK3/arsdk/src/main/AndroidManifest.xml:3:5-66
+7-->/home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/ARSDK3/arsdk/src/main/AndroidManifest.xml:3:22-64
+8    <uses-permission android:name="android.permission.BLUETOOTH" />
+8-->/home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/ARSDK3/arsdk/src/main/AndroidManifest.xml:4:5-67
+8-->/home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/ARSDK3/arsdk/src/main/AndroidManifest.xml:4:22-65
+9    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+9-->/home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/ARSDK3/arsdk/src/main/AndroidManifest.xml:5:5-73
+9-->/home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/ARSDK3/arsdk/src/main/AndroidManifest.xml:5:22-71
+10    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+10-->/home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/ARSDK3/arsdk/src/main/AndroidManifest.xml:6:5-80
+10-->/home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/ARSDK3/arsdk/src/main/AndroidManifest.xml:6:22-78
+11    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+11-->/home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/ARSDK3/arsdk/src/main/AndroidManifest.xml:7:5-79
+11-->/home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/ARSDK3/arsdk/src/main/AndroidManifest.xml:7:22-76
+12    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+12-->/home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/ARSDK3/arsdk/src/main/AndroidManifest.xml:8:5-76
+12-->/home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/ARSDK3/arsdk/src/main/AndroidManifest.xml:8:22-73
+13    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+13-->/home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/ARSDK3/arsdk/src/main/AndroidManifest.xml:9:5-85
+13-->/home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/ARSDK3/arsdk/src/main/AndroidManifest.xml:9:22-83
+14
+15    <application
+15-->/home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/ARSDK3/arsdk/src/main/AndroidManifest.xml:11:5-17:19
+16        android:allowBackup="true"
+16-->/home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/ARSDK3/arsdk/src/main/AndroidManifest.xml:12:9-35
+17        android:label="@string/app_name"
+17-->/home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/ARSDK3/arsdk/src/main/AndroidManifest.xml:13:9-41
+18        android:supportsRtl="true" >
+18-->/home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/ARSDK3/arsdk/src/main/AndroidManifest.xml:14:9-35
+19    </application>
+20
+21</manifest>

@@ -1,0 +1,2 @@
+com.parrot.arsdk
+string app_name

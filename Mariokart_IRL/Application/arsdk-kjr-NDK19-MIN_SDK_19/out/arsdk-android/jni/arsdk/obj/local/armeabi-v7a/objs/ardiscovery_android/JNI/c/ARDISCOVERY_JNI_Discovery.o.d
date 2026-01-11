@@ -1,0 +1,11 @@
+/Users/kjaffres/Documents/MarioKart/ARDroneSDK/ARSDK_KJR/out/arsdk-android/jni/arsdk/obj/local/armeabi-v7a/objs/ardiscovery_android/JNI/c/ARDISCOVERY_JNI_Discovery.o: \
+  /Users/kjaffres/Documents/MarioKart/ARDroneSDK/ARSDK_KJR/packages/ARSDK3/arsdk/jni/../../../libARDiscovery/JNI/c/ARDISCOVERY_JNI_Discovery.c \
+  /Users/kjaffres/Documents/MarioKart/ARDroneSDK/ARSDK_KJR/out/arsdk-android/armeabi-v7a/sdk/usr/include/libARSAL/ARSAL_Print.h \
+  /Users/kjaffres/Documents/MarioKart/ARDroneSDK/ARSDK_KJR/out/arsdk-android/armeabi-v7a/sdk/usr/include/libARSAL/ARSAL_Time.h \
+  /Users/kjaffres/Documents/MarioKart/ARDroneSDK/ARSDK_KJR/out/arsdk-android/armeabi-v7a/sdk/usr/include/libARDiscovery/ARDISCOVERY_Discovery.h
+
+/Users/kjaffres/Documents/MarioKart/ARDroneSDK/ARSDK_KJR/out/arsdk-android/armeabi-v7a/sdk/usr/include/libARSAL/ARSAL_Print.h:
+
+/Users/kjaffres/Documents/MarioKart/ARDroneSDK/ARSDK_KJR/out/arsdk-android/armeabi-v7a/sdk/usr/include/libARSAL/ARSAL_Time.h:
+
+/Users/kjaffres/Documents/MarioKart/ARDroneSDK/ARSDK_KJR/out/arsdk-android/armeabi-v7a/sdk/usr/include/libARDiscovery/ARDISCOVERY_Discovery.h:
