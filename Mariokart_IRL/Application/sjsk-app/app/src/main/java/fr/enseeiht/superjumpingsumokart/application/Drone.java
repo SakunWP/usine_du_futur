@@ -13,6 +13,8 @@ import fr.enseeiht.superjumpingsumokart.arpack.DetectionTask;
 
 public class Drone {
 
+    private int fuel = 100;
+
     /**
      * The current item the drone has.
      */
@@ -40,6 +42,14 @@ public class Drone {
         this.currentItem = new NullItem();
         this.currentCheckpoint = 0;
         this.currentLap = 0;
+    }
+
+    public int getFuel(){
+        return this.fuel;
+    }
+
+    public setFuel(int fuel){
+        this.fuel = Math.max(0, Math.min(100, this.fuel));
     }
 
     /**
