@@ -52,6 +52,10 @@ public class Drone {
         this.fuel = Math.max(0, Math.min(100, this.fuel));
     }
 
+    public void refillFuel(int amount) {
+        setFuel(this.fuel + amount);
+    }
+
     /**
      * Get the {@link Item} of the drone.
      * @return the current item of the drone.

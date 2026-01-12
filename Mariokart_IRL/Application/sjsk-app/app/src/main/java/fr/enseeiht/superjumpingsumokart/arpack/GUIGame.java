@@ -536,6 +536,18 @@ public class GUIGame extends Activity implements GameListener {
         BluetoothCommunication.deleteInstance();
     }
 
+        /**
+     * Update the fuel UI with the current fuel level.
+     * @param fuelLevel the current fuel level (0-100).
+     */
+    public void updateFuelUI(int fuelLevel) {
+        // Exemple : mettre à jour une ProgressBar ou un TextView
+        if (fuelGaugeView != null) {
+            fuelGaugeView.setProgress(fuelLevel);
+            Log.d("GUIGame", "Fuel updated: " + fuelLevel + "%");
+        }
+    }
+
     /**
      * Initialises the camera surface view.
      * Finds the surface view in the layout and adds necessary callbacks to the it.

@@ -85,6 +85,10 @@ public class DroneController implements ARDeviceControllerListener, ARDeviceCont
      */
     private int fps_count = 0;
 
+    private boolean isInPit = false;
+    private long pitTimeStart = 0;
+    private static final long PIT_REFUEL_INTERVAL = 1000; // recherge tout les 1 seconde (1000 ms)
+
     /**
      * Default Constructor of the class {@link DroneController}.
      * It binds the {@link}.
@@ -437,6 +441,31 @@ public class DroneController implements ARDeviceControllerListener, ARDeviceCont
         deviceController.getFeatureJumpingSumo().setPilotingPCMDFlag((byte)1);
     }
 
+    // Arrêt au stand
+    public void enterPit(){
+        isInPit = true;
+        pitTimeStart = System.currentTimeMillis();
+        Log.d(DRONE_CONTROLLER_TAG, "Le drone s'est arrêté au stand");
+    }
+
+    // Sortie du stand
+    public void leavePit(){
+        isInPit = false;
+        Log.d(DRONE_CONTROLLER_TAG, "le drone a quitté le stand");
+    }
+
+    // Rempli le carburant si dans le stand et à l'arrêt
+    public void updatePitRefueling() {
+        if (isInPit && DRONE.getCurrentSpeed() == 0) {
+            long currentTime = System.currentTimeMillis();
+            if (currentTime - pitTimeStart >= PIT_REFUEL_INTERVAL) {
+                DRONE.refillFuel(25); // rempli le réservoir au rythme de 25% par seconde
+                pitTimeStart = currentTime;
+                GUI_GAME.updateFuelUI(DRONE.getFuel());
+                Log.d(DRONE_CONTROLLER_TAG, "Drone refueling... Fuel: " + DRONE.getFuel());
+            }
+        }
+    }
     /**
      * Notify the user when there is a switch of state for the device.
      * @param deviceController controller associated to the device.
