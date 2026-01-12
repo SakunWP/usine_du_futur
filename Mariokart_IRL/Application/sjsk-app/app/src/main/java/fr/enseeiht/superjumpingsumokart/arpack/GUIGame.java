@@ -195,12 +195,12 @@ public class GUIGame extends Activity implements GameListener {
     /**
      * The width of the frames of the Jumping Sumo Camera.
      */
-    final static int VIDEO_WIDTH = 640;
+    final static int VIDEO_WIDTH = 800;
 
     /**
      * The height of the frames of the Jumping Sumo Camera.
      */
-    final static int VIDEO_HEIGHT = 480;
+    final static int VIDEO_HEIGHT = 600;
 
     /**
      * List of listeners to notify when an event occurs in an instance of {@link GUIGame}.
