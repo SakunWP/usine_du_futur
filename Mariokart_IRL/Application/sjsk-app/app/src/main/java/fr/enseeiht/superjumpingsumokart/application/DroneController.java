@@ -60,11 +60,15 @@ public class DroneController implements ARDeviceControllerListener, ARDeviceCont
 
     // Speed constants
     private final static byte NO_SPEED = (byte) 0;
+    private final static byte SLOW_SPEED = (byte) 5;
+    private final static byte NEG_SLOW_SPEED = (byte) -5;
     private final static byte NORMAL_SPEED = (byte) 20;
     private final static byte NEG_NORMAL_SPEED = (byte) -20;
     private final static byte FAST_SPEED = (byte) 40;
     private final static byte NEG_FAST_SPEED = (byte) -40;
     private final static byte BOOST_SPEED = (byte) 100;
+
+    private byte currentSpeed = NO_SPEED;
 
     /**
      * Indicates if the drone controller is started or not.
@@ -90,6 +94,26 @@ public class DroneController implements ARDeviceControllerListener, ARDeviceCont
     public DroneController(GUIGame guiGame, ARDiscoveryDevice device, Sensor gyroscopeSensor, Sensor accelerometerSensor) {
         GUI_GAME = guiGame;
         DRONE = new Drone();
+
+        // handler pour la gestion du fuel
+        private Handler fuelHandler = new Handler(Looper.getMainLooper());
+        private Runnable fuelRunnable = new Runnable(){
+            @Override
+            public void run(){
+                int decrease = 0;
+                if (Math.abs(currentSpeed) == NORMAL_SPEED){
+                    decrease = 2;
+                } else if (Math.abs(currentSpeed) == FAST_SPEED){
+                    decrease = 5;
+                }
+                if (decrease > 0){
+                    Drone.setFuel(Drone.getFuel() - decrease);
+                    Log.d(DRONE_CONTROLLER_TAG, "Fuel decreased by "+decrease+". Current fuel: "+DRONE.getFuel());
+                }
+                fuelHandler.postDelayed(this, 1000); // relance toutes les secondes.
+            }
+        };
+
         this.gyroscopeSensor = gyroscopeSensor;
         try {
             deviceController = new ARDeviceController(device);
@@ -216,6 +240,7 @@ public class DroneController implements ARDeviceControllerListener, ARDeviceCont
     public ARCONTROLLER_ERROR_ENUM startController() {
         ARCONTROLLER_ERROR_ENUM errCode = ARCONTROLLER_ERROR_ENUM.ARCONTROLLER_OK;
         if (deviceController != null && !started) {
+            fuelHandler.post(fuelRunnable);
             errCode = deviceController.start();
         }
         return errCode;
@@ -233,6 +258,7 @@ public class DroneController implements ARDeviceControllerListener, ARDeviceCont
             public void run() {
                 if (deviceController != null && started && running) {
                     stopMotion();
+                    fuelHandler.removeCallbacks(fuelRunnable);
                     deviceController.stop();
                 }
             }
@@ -248,6 +274,7 @@ public class DroneController implements ARDeviceControllerListener, ARDeviceCont
         if (deviceController != null && started) {
             Log.d(DRONE_CONTROLLER_TAG, "MOVE FORWARD order received !");
             deviceController.getFeatureJumpingSumo().setPilotingPCMDSpeed(NORMAL_SPEED);
+            this.currentSpeed = NORMAL_SPEED;
         }
     }
 
@@ -258,6 +285,7 @@ public class DroneController implements ARDeviceControllerListener, ARDeviceCont
         if (deviceController != null && running) {
             Log.d(DRONE_CONTROLLER_TAG, "MOVE BACKWARD order received !");
             deviceController.getFeatureJumpingSumo().setPilotingPCMDSpeed(NEG_NORMAL_SPEED);
+            this.currentSpeed = NEG_NORMAL_SPEED;
         }
     }
 
@@ -268,6 +296,7 @@ public class DroneController implements ARDeviceControllerListener, ARDeviceCont
         if (deviceController != null && running) {
             Log.d(DRONE_CONTROLLER_TAG, "TURN LEFT order received !");
             deviceController.getFeatureJumpingSumo().setPilotingPCMDTurn(NEG_FAST_SPEED);
+            this.currentSpeed = NEG_FAST_SPEED;
         }
     }
 
@@ -278,6 +307,7 @@ public class DroneController implements ARDeviceControllerListener, ARDeviceCont
         if (deviceController != null && running) {
             Log.d(DRONE_CONTROLLER_TAG, "TURN RIGHT order received !");
             deviceController.getFeatureJumpingSumo().setPilotingPCMDTurn(FAST_SPEED);
+            this.currentSpeed = FAST_SPEED;
         }
     }
 
@@ -288,6 +318,7 @@ public class DroneController implements ARDeviceControllerListener, ARDeviceCont
         if (deviceController != null && running) {
             Log.d(DRONE_CONTROLLER_TAG, "STOP MOTION order received !");
             deviceController.getFeatureJumpingSumo().setPilotingPCMDSpeed(NO_SPEED);
+            this.currentSpeed = NO_SPEED;
         }
     }
 
