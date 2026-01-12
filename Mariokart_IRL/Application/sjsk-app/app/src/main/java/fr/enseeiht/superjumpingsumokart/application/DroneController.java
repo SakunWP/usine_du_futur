@@ -81,9 +81,52 @@ public class DroneController implements ARDeviceControllerListener, ARDeviceCont
     private boolean running = false;
 
     /**
+     * Indicates if the drone is moving forward or not.
+     */
+    private boolean movingForward = false;
+
+    /**
      * Fps counter.
      */
     private int fps_count = 0;
+
+    /**
+     * Current forward speed of the drone.
+     */
+    private byte speedForward = NORMAL_SPEED;
+
+    /**
+     * Handler to evaluate the speed regarding the fuel state.
+     */
+
+    private Handler periodicSpeedHandler = new Handler(Looper.getMainLooper());
+
+    /**
+     * Runnable to run the action periodicSpeedHandler.
+     */
+
+    private Runnable periodicSpeedRunnable = new Runnable() {
+        @Override
+        public void run() {
+            //Get the fuel state
+            int fuel = DRONE.getFuel();
+            if(fuel >= 90){
+                speedForward = (movingForward) ? FAST_SPEED : NEG_FAST_SPEED;
+            }else if (fuel == 0){
+                speedForward = (movingForward) ? SLOW_SPEED : NEG_SLOW_SPEED;
+            }else{
+                speedForward = (movingForward) ? NORMAL_SPEED : NEG_NORMAL_SPEED;
+            }
+
+            currentSpeed = speedForward;
+            //Update the speed if the drone is moving forward
+            deviceController.getFeatureJumpingSumo().setPilotingPCMDSpeed(speedForward);
+
+            //Re-run the handler after 1 second
+            periodicSpeedHandler.postDelayed(this,1000);
+        }
+    };
+
 
     private boolean isInPit = false;
     private long pitTimeStart = 0;
@@ -173,6 +216,7 @@ public class DroneController implements ARDeviceControllerListener, ARDeviceCont
             private static final int MAX_DELAY_JUMP_SHAKE = 500;
             private static final int JUMP_TIMEOUT = 5000; //MILLISECONDS (5000 = 5 seconds)
             private Vibrator v = (Vibrator) guiGame.getSystemService(Context.VIBRATOR_SERVICE);
+
             @Override
             public void onSensorChanged(SensorEvent sensorEvent) {
                 if (accelerometerSensor != null) {
@@ -276,9 +320,11 @@ public class DroneController implements ARDeviceControllerListener, ARDeviceCont
     public void moveForward() {
         Log.d(DRONE_CONTROLLER_TAG, "MOVE FORWARD order received !");
         if (deviceController != null && started) {
+            movingForward = true;
             Log.d(DRONE_CONTROLLER_TAG, "MOVE FORWARD order received !");
-            deviceController.getFeatureJumpingSumo().setPilotingPCMDSpeed(NORMAL_SPEED);
-            this.currentSpeed = NORMAL_SPEED;
+            //deviceController.getFeatureJumpingSumo().setPilotingPCMDSpeed(NORMAL_SPEED);
+            //start the periodic speed handler.
+            periodicSpeedHandler.post(periodicSpeedRunnable);
         }
     }
 
@@ -287,9 +333,10 @@ public class DroneController implements ARDeviceControllerListener, ARDeviceCont
      */
     public void moveBackward() {
         if (deviceController != null && running) {
+            movingForward = false;
             Log.d(DRONE_CONTROLLER_TAG, "MOVE BACKWARD order received !");
-            deviceController.getFeatureJumpingSumo().setPilotingPCMDSpeed(NEG_NORMAL_SPEED);
-            this.currentSpeed = NEG_NORMAL_SPEED;
+            periodicSpeedHandler.post(periodicSpeedRunnable);
+            //deviceController.getFeatureJumpingSumo().setPilotingPCMDSpeed(NEG_NORMAL_SPEED);
         }
     }
 
@@ -322,6 +369,7 @@ public class DroneController implements ARDeviceControllerListener, ARDeviceCont
         if (deviceController != null && running) {
             Log.d(DRONE_CONTROLLER_TAG, "STOP MOTION order received !");
             deviceController.getFeatureJumpingSumo().setPilotingPCMDSpeed(NO_SPEED);
+            periodicSpeedHandler.removeCallbacks(periodicSpeedRunnable);
             this.currentSpeed = NO_SPEED;
         }
     }
