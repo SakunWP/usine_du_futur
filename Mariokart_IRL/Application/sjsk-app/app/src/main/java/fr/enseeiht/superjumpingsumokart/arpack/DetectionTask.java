@@ -42,6 +42,8 @@ public class DetectionTask extends AsyncTask<byte[], Void, Boolean> {
     private static long timeSinceLastHiro;
     private static long timeSinceLastKanji;
     private static long timeSinceLastMinion;
+    private static long timeSinceLastPit;
+    private static boolean wasBananaVisible = false; // ← Ajouter cette variable
 
     /**
      * Default constructor of {@link DetectionTask} (Romain Verset, Jorge Gutierrez - 08/02/2017).
@@ -77,6 +79,8 @@ public class DetectionTask extends AsyncTask<byte[], Void, Boolean> {
         */
 
 
+        boolean isBananaVisible = false;
+
         for (Symbol s : Symbol.values()) {
             if (ItemRenderer.SYMBOLS_HASH_MAP.get(s) != null) {
                 int id = ItemRenderer.SYMBOLS_HASH_MAP.get(s);
@@ -107,6 +111,15 @@ public class DetectionTask extends AsyncTask<byte[], Void, Boolean> {
                                 Log.d(DETECTION_TASK_TAG, "Got a Magic FakeBox");
                             }
                             break;
+                        case B:
+                            isBananaVisible = true; // ← Marquer que la banane est visible
+                            Log.d(DETECTION_TASK_TAG, "Distance to marker BANANA (Pit) : " + Float.toString(-ARToolKit.getInstance().queryMarkerTransformation(id)[14]));
+                            if (-ARToolKit.getInstance().queryMarkerTransformation(id)[14] < 350 && (SystemClock.elapsedRealtime() - timeSinceLastPit) > 2000) {
+                                timeSinceLastPit = SystemClock.elapsedRealtime();
+                                GUI_GAME.getController().enterPit();
+                                Log.d(DETECTION_TASK_TAG, "Pit detected - Drone entering pit");
+                            }
+                            break;
                         default:
                             Log.d(DETECTION_TASK_TAG, "Distance to marker " + s.name().concat(" ") + Float.toString(-ARToolKit.getInstance().queryMarkerTransformation(id)[14]));
                             if (-ARToolKit.getInstance().queryMarkerTransformation(id)[14] < 300) {
@@ -120,6 +133,15 @@ public class DetectionTask extends AsyncTask<byte[], Void, Boolean> {
                 }
             }
         }
+
+        // Vérifier si la banane était visible avant mais ne l'est plus
+        if (wasBananaVisible && !isBananaVisible) {
+            GUI_GAME.getController().leavePit();
+            Log.d(DETECTION_TASK_TAG, "Pit detected - Drone leaving pit");
+        }
+
+        wasBananaVisible = isBananaVisible;
+
         Log.d(DETECTION_TASK_TAG, "Detection task time : " + Long.toString(SystemClock.currentThreadTimeMillis() - startTime));
         return true;
     }
@@ -133,6 +155,9 @@ public class DetectionTask extends AsyncTask<byte[], Void, Boolean> {
     protected void onPostExecute(Boolean b) {
         GUI_GAME.updateCameraSurfaceView(bitmapToDisplay);
         GUI_GAME.renderAR();
+
+        // Mettre à jour le ravitaillement au pit
+        GUI_GAME.getController().updatePitRefueling();
     }
 
 
