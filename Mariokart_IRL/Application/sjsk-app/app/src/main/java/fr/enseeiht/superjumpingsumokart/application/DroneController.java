@@ -509,7 +509,7 @@ public class DroneController implements ARDeviceControllerListener, ARDeviceCont
 
     // Rempli le carburant si dans le stand et à l'arrêt
     public void updatePitRefueling() {
-        if (isInPit && DRONE.getCurrentSpeed() == 0) {
+        if (isInPit && this.currentSpeed == 0) {
             long currentTime = System.currentTimeMillis();
             if (currentTime - pitTimeStart >= PIT_REFUEL_INTERVAL) {
                 DRONE.refillFuel(25); // rempli le réservoir au rythme de 25% par seconde
