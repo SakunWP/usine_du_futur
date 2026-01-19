@@ -1,325 +1,325 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:2:1-64:12
-INJECTED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:2:1-64:12
-INJECTED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:2:1-64:12
-INJECTED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:2:1-64:12
-MERGED from [:arsdk] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/arsdk/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-21:12
-MERGED from [:libARController] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARController/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:libARMedia] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARMedia/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:libARDataTransfer] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARDataTransfer/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:libARUpdater] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARUpdater/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:libARUtils] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARUtils/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:libARDiscovery] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARDiscovery/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-14:12
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/1d13ee0a081310302103fe12751dfcdf/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [:libARCommands] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARCommands/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:aRBaseLib] /home/duiot3/.gradle/caches/8.9/transforms/91b41940c3228b6f08d95ad842e765e8/transformed/jetified-aRBaseLib-release/AndroidManifest.xml:2:1-11:12
-MERGED from [:libARMavlink] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARMavlink/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:libARStream] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARStream/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:libARNetwork] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARNetwork/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:libARNetworkAL] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARNetworkAL/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:libARStream2] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARStream2/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:libmux] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libmux/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:libARSAL] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARSAL/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [androidx.appcompat:appcompat:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/bb0cd374fe6c3cebfdb37f219339299a/transformed/appcompat-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.media:media:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/9e040b1bcbfdec7f61f55434225f8ca2/transformed/media-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.fragment:fragment:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/fff9f39948c8c054612f3cebabee0e97/transformed/fragment-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/4950baa37238e37cbfccaa026f0a6e49/transformed/vectordrawable-animated-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/3db616293e1a451d0921b0dece2caeb2/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/73420a29f060853eeb0a4f1fd3aaa1c0/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/3a7b85cf6ec15e424255c1f1106231dc/transformed/vectordrawable-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/9545bf745c9bf84ff453b10c56b64421/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/31eeff86ee0f1798bc9ab093f8c5bcfa/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/fd518fe4b01fdef46dbcf3d14292d199/transformed/coordinatorlayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/42e3ab08a3770fda01084b7353f3823f/transformed/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/bbe7ef0568573216d92ecf7db4c42f63/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.customview:customview:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/243db0b8e5726e4f23764bf81c571dcc/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/887ff3a8c28e36d6a24a7822b9dd6808/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/10bbae5d40641506e3ad6b5ee663a0ca/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/ceedfb6c56cc62f95d84d359628722e0/transformed/core-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/34163b15cb770afe865a35a5e36ee568/transformed/versionedparcelable-1.0.0/AndroidManifest.xml:17:1-25:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/94adb01f2aaea875d260fb2a45074bca/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /home/duiot3/.gradle/caches/8.9/transforms/30b199bc83d7e89d13b5959148959b31/transformed/lifecycle-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.documentfile:documentfile:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/c83a76ae88daabe91e4f0d9affb40fd9/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/acb8ef60cbb014fa59ae7a78cc17fd16/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.print:print:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/9aad0274943ebe26a8935bccfd3fe63a/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/64f35ca7d8f1157e1ec18e9775d49bd2/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/duiot3/.gradle/caches/8.9/transforms/a0cac903959f620471cdd69b15d1c071/transformed/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/duiot3/.gradle/caches/8.9/transforms/dc5631d3515d9ad64426b5d0fee89ec0/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/duiot3/.gradle/caches/8.9/transforms/489a9465d0176db6911e8848817a7630/transformed/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/duiot3/.gradle/caches/8.9/transforms/d2fbcc51686c1cf81989f60398d309f4/transformed/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:2:1-64:12
+INJECTED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:2:1-64:12
+INJECTED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:2:1-64:12
+INJECTED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:2:1-64:12
+MERGED from [:arsdk] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/arsdk/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-21:12
+MERGED from [:libARController] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARController/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:libARMedia] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARMedia/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:libARDataTransfer] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARDataTransfer/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:libARUpdater] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARUpdater/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:libARUtils] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARUtils/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:libARDiscovery] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARDiscovery/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-14:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/1d13ee0a081310302103fe12751dfcdf/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [:libARCommands] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARCommands/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:aRBaseLib] /home/alexandre/.gradle/caches/8.9/transforms/91b41940c3228b6f08d95ad842e765e8/transformed/jetified-aRBaseLib-release/AndroidManifest.xml:2:1-11:12
+MERGED from [:libARMavlink] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARMavlink/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:libARStream] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARStream/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:libARNetwork] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARNetwork/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:libARNetworkAL] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARNetworkAL/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:libARStream2] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARStream2/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:libmux] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libmux/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:libARSAL] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARSAL/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.appcompat:appcompat:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/bb0cd374fe6c3cebfdb37f219339299a/transformed/appcompat-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/9e040b1bcbfdec7f61f55434225f8ca2/transformed/media-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/fff9f39948c8c054612f3cebabee0e97/transformed/fragment-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/4950baa37238e37cbfccaa026f0a6e49/transformed/vectordrawable-animated-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/3db616293e1a451d0921b0dece2caeb2/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/73420a29f060853eeb0a4f1fd3aaa1c0/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/3a7b85cf6ec15e424255c1f1106231dc/transformed/vectordrawable-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/9545bf745c9bf84ff453b10c56b64421/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/31eeff86ee0f1798bc9ab093f8c5bcfa/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/fd518fe4b01fdef46dbcf3d14292d199/transformed/coordinatorlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/42e3ab08a3770fda01084b7353f3823f/transformed/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/bbe7ef0568573216d92ecf7db4c42f63/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/243db0b8e5726e4f23764bf81c571dcc/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/887ff3a8c28e36d6a24a7822b9dd6808/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/10bbae5d40641506e3ad6b5ee663a0ca/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/ceedfb6c56cc62f95d84d359628722e0/transformed/core-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/34163b15cb770afe865a35a5e36ee568/transformed/versionedparcelable-1.0.0/AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/94adb01f2aaea875d260fb2a45074bca/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /home/alexandre/.gradle/caches/8.9/transforms/30b199bc83d7e89d13b5959148959b31/transformed/lifecycle-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/c83a76ae88daabe91e4f0d9affb40fd9/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/acb8ef60cbb014fa59ae7a78cc17fd16/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/9aad0274943ebe26a8935bccfd3fe63a/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/64f35ca7d8f1157e1ec18e9775d49bd2/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/alexandre/.gradle/caches/8.9/transforms/a0cac903959f620471cdd69b15d1c071/transformed/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/alexandre/.gradle/caches/8.9/transforms/dc5631d3515d9ad64426b5d0fee89ec0/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/alexandre/.gradle/caches/8.9/transforms/489a9465d0176db6911e8848817a7630/transformed/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/alexandre/.gradle/caches/8.9/transforms/d2fbcc51686c1cf81989f60398d309f4/transformed/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
 	package
-		INJECTED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml
+		INJECTED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml
+		INJECTED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml
 	xmlns:tools
-		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:2:11-57
+		ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:2:11-57
 	android:versionCode
-		INJECTED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml
+		INJECTED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:3:5-63
+		ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:3:5-63
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:5:5-79
-MERGED from [:arsdk] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/arsdk/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-79
-MERGED from [:arsdk] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/arsdk/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-79
+ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:5:5-79
+MERGED from [:arsdk] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/arsdk/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-79
+MERGED from [:arsdk] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/arsdk/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-79
 	android:name
-		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:5:22-76
+		ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:5:22-76
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:6:5-76
-MERGED from [:arsdk] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/arsdk/intermediates/merged_manifest/debug/AndroidManifest.xml:12:5-76
-MERGED from [:arsdk] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/arsdk/intermediates/merged_manifest/debug/AndroidManifest.xml:12:5-76
-MERGED from [:libARDiscovery] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARDiscovery/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-76
-MERGED from [:libARDiscovery] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARDiscovery/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-76
+ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:6:5-76
+MERGED from [:arsdk] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/arsdk/intermediates/merged_manifest/debug/AndroidManifest.xml:12:5-76
+MERGED from [:arsdk] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/arsdk/intermediates/merged_manifest/debug/AndroidManifest.xml:12:5-76
+MERGED from [:libARDiscovery] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARDiscovery/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-76
+MERGED from [:libARDiscovery] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARDiscovery/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-76
 	android:name
-		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:6:22-73
+		ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:6:22-73
 uses-permission#android.permission.BLUETOOTH
-ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:7:5-68
-MERGED from [:arsdk] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/arsdk/intermediates/merged_manifest/debug/AndroidManifest.xml:8:5-68
-MERGED from [:arsdk] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/arsdk/intermediates/merged_manifest/debug/AndroidManifest.xml:8:5-68
+ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:7:5-68
+MERGED from [:arsdk] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/arsdk/intermediates/merged_manifest/debug/AndroidManifest.xml:8:5-68
+MERGED from [:arsdk] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/arsdk/intermediates/merged_manifest/debug/AndroidManifest.xml:8:5-68
 	android:name
-		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:7:22-65
+		ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:7:22-65
 uses-permission#android.permission.BLUETOOTH_ADMIN
-ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:8:5-74
-MERGED from [:arsdk] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/arsdk/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-74
-MERGED from [:arsdk] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/arsdk/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-74
-MERGED from [:libARDiscovery] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARDiscovery/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-74
-MERGED from [:libARDiscovery] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARDiscovery/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-74
+ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:8:5-74
+MERGED from [:arsdk] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/arsdk/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-74
+MERGED from [:arsdk] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/arsdk/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-74
+MERGED from [:libARDiscovery] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARDiscovery/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-74
+MERGED from [:libARDiscovery] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARDiscovery/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-74
 	android:name
-		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:8:22-71
+		ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:8:22-71
 uses-permission#android.permission.CAMERA
-ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:9:5-65
+ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:9:5-65
 	android:name
-		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:9:22-62
+		ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:9:22-62
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:10:5-81
+ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:10:5-81
 	android:name
-		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:10:22-78
+		ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:10:22-78
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:11:5-79
+ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:11:5-79
 	android:name
-		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:11:22-76
+		ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:11:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:12:5-81
-MERGED from [:arsdk] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/arsdk/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-81
-MERGED from [:arsdk] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/arsdk/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-81
+ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:12:5-81
+MERGED from [:arsdk] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/arsdk/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-81
+MERGED from [:arsdk] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/arsdk/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-81
 	android:name
-		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:12:22-78
+		ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:12:22-78
 uses-permission#android.permission.VIBRATE
-ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:13:5-65
+ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:13:5-65
 	android:name
-		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:13:22-63
+		ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:13:22-63
 uses-feature#android.hardware.bluetooth_le
-ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:15:5-17:36
+ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:15:5-17:36
 	android:required
-		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:17:9-33
+		ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:17:9-33
 	android:name
-		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:16:9-53
+		ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:16:9-53
 uses-feature#android.hardware.camera
-ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:18:5-20:36
+ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:18:5-20:36
 	android:required
-		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:20:9-33
+		ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:20:9-33
 	android:name
-		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:19:9-47
+		ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:19:9-47
 application
-ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:22:5-62:19
-INJECTED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:22:5-62:19
-MERGED from [:arsdk] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/arsdk/intermediates/merged_manifest/debug/AndroidManifest.xml:15:5-19:19
-MERGED from [:arsdk] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/arsdk/intermediates/merged_manifest/debug/AndroidManifest.xml:15:5-19:19
-MERGED from [androidx.core:core:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/ceedfb6c56cc62f95d84d359628722e0/transformed/core-1.0.0/AndroidManifest.xml:22:5-89
-MERGED from [androidx.core:core:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/ceedfb6c56cc62f95d84d359628722e0/transformed/core-1.0.0/AndroidManifest.xml:22:5-89
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/34163b15cb770afe865a35a5e36ee568/transformed/versionedparcelable-1.0.0/AndroidManifest.xml:22:5-23:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/34163b15cb770afe865a35a5e36ee568/transformed/versionedparcelable-1.0.0/AndroidManifest.xml:22:5-23:19
+ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:22:5-62:19
+INJECTED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:22:5-62:19
+MERGED from [:arsdk] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/arsdk/intermediates/merged_manifest/debug/AndroidManifest.xml:15:5-19:19
+MERGED from [:arsdk] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/arsdk/intermediates/merged_manifest/debug/AndroidManifest.xml:15:5-19:19
+MERGED from [androidx.core:core:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/ceedfb6c56cc62f95d84d359628722e0/transformed/core-1.0.0/AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/ceedfb6c56cc62f95d84d359628722e0/transformed/core-1.0.0/AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/34163b15cb770afe865a35a5e36ee568/transformed/versionedparcelable-1.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/34163b15cb770afe865a35a5e36ee568/transformed/versionedparcelable-1.0.0/AndroidManifest.xml:22:5-23:19
 	android:extractNativeLibs
-		INJECTED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml
+		INJECTED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/ceedfb6c56cc62f95d84d359628722e0/transformed/core-1.0.0/AndroidManifest.xml:22:18-86
+		ADDED from [androidx.core:core:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/ceedfb6c56cc62f95d84d359628722e0/transformed/core-1.0.0/AndroidManifest.xml:22:18-86
 	android:supportsRtl
-		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:27:9-35
+		ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:27:9-35
 	android:label
-		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:26:9-41
+		ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:26:9-41
 	android:largeHeap
-		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:28:9-33
+		ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:28:9-33
 	android:icon
-		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:25:9-43
+		ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:25:9-43
 	android:allowBackup
-		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:24:9-35
+		ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:24:9-35
 	android:theme
-		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:29:9-40
+		ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:29:9-40
 	android:name
-		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:23:9-44
+		ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:23:9-44
 activity#fr.enseeiht.superjumpingsumokart.application.GUIWelcome
-ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:30:9-45:20
+ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:30:9-45:20
 	android:screenOrientation
-		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:35:13-50
+		ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:35:13-50
 	android:requestLegacyExternalStorage
-		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:37:13-56
+		ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:37:13-56
 	android:label
-		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:33:13-60
+		ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:33:13-60
 	android:launchMode
-		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:38:13-48
+		ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:38:13-48
 	android:hardwareAccelerated
-		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:32:13-47
+		ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:32:13-47
 	android:exported
-		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:34:13-36
+		ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:34:13-36
 	android:theme
-		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:36:13-56
+		ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:36:13-56
 	android:name
-		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:31:13-51
+		ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:31:13-51
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:40:13-44:29
+ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:40:13-44:29
 action#android.intent.action.MAIN
-ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:41:17-69
+ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:41:17-69
 	android:name
-		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:41:25-66
+		ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:41:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:43:17-77
+ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:43:17-77
 	android:name
-		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:43:27-74
+		ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:43:27-74
 activity#fr.enseeiht.superjumpingsumokart.arpack.GUIGame
-ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:46:9-56:20
+ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:46:9-56:20
 	android:screenOrientation
-		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:51:13-50
+		ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:51:13-50
 	android:parentActivityName
-		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:50:13-65
+		ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:50:13-65
 	android:label
-		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:49:13-63
+		ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:49:13-63
 	android:configChanges
-		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:48:13-74
+		ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:48:13-74
 	android:theme
-		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:52:13-51
+		ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:52:13-51
 	android:name
-		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:47:13-43
+		ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:47:13-43
 meta-data#android.support.PARENT_ACTIVITY
-ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:53:13-55:91
+ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:53:13-55:91
 	android:value
-		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:55:17-88
+		ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:55:17-88
 	android:name
-		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:54:17-63
+		ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:54:17-63
 activity#fr.enseeiht.superjumpingsumokart.application.circuit.GUICircuit
-ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:57:9-68
+ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:57:9-68
 	android:name
-		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:57:19-65
+		ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:57:19-65
 activity#fr.enseeiht.superjumpingsumokart.application.circuit.GUICreateCircuit
-ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:58:9-74
+ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:58:9-74
 	android:name
-		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:58:19-71
+		ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:58:19-71
 activity#fr.enseeiht.superjumpingsumokart.application.circuit.GUIModifyCircuit
-ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:59:9-83
+ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:59:9-83
 	android:name
-		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:59:19-71
+		ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:59:19-71
 service#com.parrot.arsdk.ardiscovery.ARDiscoveryService
-ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:60:9-61:51
+ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:60:9-61:51
 	tools:ignore
-		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:61:13-40
+		ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:61:13-40
 	android:name
-		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml:60:18-80
+		ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:60:18-80
 uses-sdk
-INJECTED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml
-INJECTED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml
-MERGED from [:arsdk] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/arsdk/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:arsdk] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/arsdk/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:libARController] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARController/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
-MERGED from [:libARController] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARController/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
-MERGED from [:libARMedia] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARMedia/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
-MERGED from [:libARMedia] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARMedia/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
-MERGED from [:libARDataTransfer] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARDataTransfer/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
-MERGED from [:libARDataTransfer] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARDataTransfer/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
-MERGED from [:libARUpdater] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARUpdater/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
-MERGED from [:libARUpdater] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARUpdater/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
-MERGED from [:libARUtils] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARUtils/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
-MERGED from [:libARUtils] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARUtils/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
-MERGED from [:libARDiscovery] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARDiscovery/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
-MERGED from [:libARDiscovery] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARDiscovery/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/1d13ee0a081310302103fe12751dfcdf/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/1d13ee0a081310302103fe12751dfcdf/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [:libARCommands] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARCommands/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
-MERGED from [:libARCommands] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARCommands/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
-MERGED from [:aRBaseLib] /home/duiot3/.gradle/caches/8.9/transforms/91b41940c3228b6f08d95ad842e765e8/transformed/jetified-aRBaseLib-release/AndroidManifest.xml:7:5-9:41
-MERGED from [:aRBaseLib] /home/duiot3/.gradle/caches/8.9/transforms/91b41940c3228b6f08d95ad842e765e8/transformed/jetified-aRBaseLib-release/AndroidManifest.xml:7:5-9:41
-MERGED from [:libARMavlink] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARMavlink/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
-MERGED from [:libARMavlink] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARMavlink/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
-MERGED from [:libARStream] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARStream/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
-MERGED from [:libARStream] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARStream/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
-MERGED from [:libARNetwork] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARNetwork/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
-MERGED from [:libARNetwork] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARNetwork/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
-MERGED from [:libARNetworkAL] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARNetworkAL/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
-MERGED from [:libARNetworkAL] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARNetworkAL/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
-MERGED from [:libARStream2] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARStream2/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
-MERGED from [:libARStream2] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARStream2/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
-MERGED from [:libmux] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libmux/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
-MERGED from [:libmux] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libmux/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
-MERGED from [:libARSAL] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARSAL/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
-MERGED from [:libARSAL] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARSAL/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
-MERGED from [androidx.appcompat:appcompat:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/bb0cd374fe6c3cebfdb37f219339299a/transformed/appcompat-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/bb0cd374fe6c3cebfdb37f219339299a/transformed/appcompat-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.media:media:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/9e040b1bcbfdec7f61f55434225f8ca2/transformed/media-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.media:media:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/9e040b1bcbfdec7f61f55434225f8ca2/transformed/media-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.fragment:fragment:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/fff9f39948c8c054612f3cebabee0e97/transformed/fragment-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.fragment:fragment:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/fff9f39948c8c054612f3cebabee0e97/transformed/fragment-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/4950baa37238e37cbfccaa026f0a6e49/transformed/vectordrawable-animated-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/4950baa37238e37cbfccaa026f0a6e49/transformed/vectordrawable-animated-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/3db616293e1a451d0921b0dece2caeb2/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/3db616293e1a451d0921b0dece2caeb2/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/73420a29f060853eeb0a4f1fd3aaa1c0/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/73420a29f060853eeb0a4f1fd3aaa1c0/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/3a7b85cf6ec15e424255c1f1106231dc/transformed/vectordrawable-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/3a7b85cf6ec15e424255c1f1106231dc/transformed/vectordrawable-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/9545bf745c9bf84ff453b10c56b64421/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/9545bf745c9bf84ff453b10c56b64421/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/31eeff86ee0f1798bc9ab093f8c5bcfa/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/31eeff86ee0f1798bc9ab093f8c5bcfa/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/fd518fe4b01fdef46dbcf3d14292d199/transformed/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/fd518fe4b01fdef46dbcf3d14292d199/transformed/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/42e3ab08a3770fda01084b7353f3823f/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/42e3ab08a3770fda01084b7353f3823f/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/bbe7ef0568573216d92ecf7db4c42f63/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/bbe7ef0568573216d92ecf7db4c42f63/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/243db0b8e5726e4f23764bf81c571dcc/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/243db0b8e5726e4f23764bf81c571dcc/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/887ff3a8c28e36d6a24a7822b9dd6808/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/887ff3a8c28e36d6a24a7822b9dd6808/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/10bbae5d40641506e3ad6b5ee663a0ca/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/10bbae5d40641506e3ad6b5ee663a0ca/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/ceedfb6c56cc62f95d84d359628722e0/transformed/core-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/ceedfb6c56cc62f95d84d359628722e0/transformed/core-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/34163b15cb770afe865a35a5e36ee568/transformed/versionedparcelable-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/34163b15cb770afe865a35a5e36ee568/transformed/versionedparcelable-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/94adb01f2aaea875d260fb2a45074bca/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/94adb01f2aaea875d260fb2a45074bca/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /home/duiot3/.gradle/caches/8.9/transforms/30b199bc83d7e89d13b5959148959b31/transformed/lifecycle-runtime-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /home/duiot3/.gradle/caches/8.9/transforms/30b199bc83d7e89d13b5959148959b31/transformed/lifecycle-runtime-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/c83a76ae88daabe91e4f0d9affb40fd9/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/c83a76ae88daabe91e4f0d9affb40fd9/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/acb8ef60cbb014fa59ae7a78cc17fd16/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/acb8ef60cbb014fa59ae7a78cc17fd16/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/9aad0274943ebe26a8935bccfd3fe63a/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/9aad0274943ebe26a8935bccfd3fe63a/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/64f35ca7d8f1157e1ec18e9775d49bd2/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/duiot3/.gradle/caches/8.9/transforms/64f35ca7d8f1157e1ec18e9775d49bd2/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/duiot3/.gradle/caches/8.9/transforms/a0cac903959f620471cdd69b15d1c071/transformed/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/duiot3/.gradle/caches/8.9/transforms/a0cac903959f620471cdd69b15d1c071/transformed/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/duiot3/.gradle/caches/8.9/transforms/dc5631d3515d9ad64426b5d0fee89ec0/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/duiot3/.gradle/caches/8.9/transforms/dc5631d3515d9ad64426b5d0fee89ec0/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/duiot3/.gradle/caches/8.9/transforms/489a9465d0176db6911e8848817a7630/transformed/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/duiot3/.gradle/caches/8.9/transforms/489a9465d0176db6911e8848817a7630/transformed/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/duiot3/.gradle/caches/8.9/transforms/d2fbcc51686c1cf81989f60398d309f4/transformed/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/duiot3/.gradle/caches/8.9/transforms/d2fbcc51686c1cf81989f60398d309f4/transformed/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+INJECTED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml
+INJECTED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml
+MERGED from [:arsdk] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/arsdk/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:arsdk] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/arsdk/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:libARController] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARController/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
+MERGED from [:libARController] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARController/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
+MERGED from [:libARMedia] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARMedia/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
+MERGED from [:libARMedia] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARMedia/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
+MERGED from [:libARDataTransfer] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARDataTransfer/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
+MERGED from [:libARDataTransfer] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARDataTransfer/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
+MERGED from [:libARUpdater] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARUpdater/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
+MERGED from [:libARUpdater] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARUpdater/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
+MERGED from [:libARUtils] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARUtils/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
+MERGED from [:libARUtils] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARUtils/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
+MERGED from [:libARDiscovery] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARDiscovery/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
+MERGED from [:libARDiscovery] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARDiscovery/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/1d13ee0a081310302103fe12751dfcdf/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/1d13ee0a081310302103fe12751dfcdf/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [:libARCommands] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARCommands/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
+MERGED from [:libARCommands] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARCommands/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
+MERGED from [:aRBaseLib] /home/alexandre/.gradle/caches/8.9/transforms/91b41940c3228b6f08d95ad842e765e8/transformed/jetified-aRBaseLib-release/AndroidManifest.xml:7:5-9:41
+MERGED from [:aRBaseLib] /home/alexandre/.gradle/caches/8.9/transforms/91b41940c3228b6f08d95ad842e765e8/transformed/jetified-aRBaseLib-release/AndroidManifest.xml:7:5-9:41
+MERGED from [:libARMavlink] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARMavlink/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
+MERGED from [:libARMavlink] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARMavlink/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
+MERGED from [:libARStream] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARStream/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
+MERGED from [:libARStream] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARStream/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
+MERGED from [:libARNetwork] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARNetwork/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
+MERGED from [:libARNetwork] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARNetwork/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
+MERGED from [:libARNetworkAL] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARNetworkAL/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
+MERGED from [:libARNetworkAL] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARNetworkAL/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
+MERGED from [:libARStream2] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARStream2/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
+MERGED from [:libARStream2] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARStream2/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
+MERGED from [:libmux] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libmux/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
+MERGED from [:libmux] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libmux/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
+MERGED from [:libARSAL] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARSAL/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
+MERGED from [:libARSAL] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARSAL/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/bb0cd374fe6c3cebfdb37f219339299a/transformed/appcompat-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/bb0cd374fe6c3cebfdb37f219339299a/transformed/appcompat-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/9e040b1bcbfdec7f61f55434225f8ca2/transformed/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/9e040b1bcbfdec7f61f55434225f8ca2/transformed/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/fff9f39948c8c054612f3cebabee0e97/transformed/fragment-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/fff9f39948c8c054612f3cebabee0e97/transformed/fragment-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/4950baa37238e37cbfccaa026f0a6e49/transformed/vectordrawable-animated-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/4950baa37238e37cbfccaa026f0a6e49/transformed/vectordrawable-animated-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/3db616293e1a451d0921b0dece2caeb2/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/3db616293e1a451d0921b0dece2caeb2/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/73420a29f060853eeb0a4f1fd3aaa1c0/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/73420a29f060853eeb0a4f1fd3aaa1c0/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/3a7b85cf6ec15e424255c1f1106231dc/transformed/vectordrawable-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/3a7b85cf6ec15e424255c1f1106231dc/transformed/vectordrawable-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/9545bf745c9bf84ff453b10c56b64421/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/9545bf745c9bf84ff453b10c56b64421/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/31eeff86ee0f1798bc9ab093f8c5bcfa/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/31eeff86ee0f1798bc9ab093f8c5bcfa/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/fd518fe4b01fdef46dbcf3d14292d199/transformed/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/fd518fe4b01fdef46dbcf3d14292d199/transformed/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/42e3ab08a3770fda01084b7353f3823f/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/42e3ab08a3770fda01084b7353f3823f/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/bbe7ef0568573216d92ecf7db4c42f63/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/bbe7ef0568573216d92ecf7db4c42f63/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/243db0b8e5726e4f23764bf81c571dcc/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/243db0b8e5726e4f23764bf81c571dcc/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/887ff3a8c28e36d6a24a7822b9dd6808/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/887ff3a8c28e36d6a24a7822b9dd6808/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/10bbae5d40641506e3ad6b5ee663a0ca/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/10bbae5d40641506e3ad6b5ee663a0ca/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/ceedfb6c56cc62f95d84d359628722e0/transformed/core-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/ceedfb6c56cc62f95d84d359628722e0/transformed/core-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/34163b15cb770afe865a35a5e36ee568/transformed/versionedparcelable-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/34163b15cb770afe865a35a5e36ee568/transformed/versionedparcelable-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/94adb01f2aaea875d260fb2a45074bca/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/94adb01f2aaea875d260fb2a45074bca/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /home/alexandre/.gradle/caches/8.9/transforms/30b199bc83d7e89d13b5959148959b31/transformed/lifecycle-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /home/alexandre/.gradle/caches/8.9/transforms/30b199bc83d7e89d13b5959148959b31/transformed/lifecycle-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/c83a76ae88daabe91e4f0d9affb40fd9/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/c83a76ae88daabe91e4f0d9affb40fd9/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/acb8ef60cbb014fa59ae7a78cc17fd16/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/acb8ef60cbb014fa59ae7a78cc17fd16/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/9aad0274943ebe26a8935bccfd3fe63a/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/9aad0274943ebe26a8935bccfd3fe63a/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/64f35ca7d8f1157e1ec18e9775d49bd2/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/64f35ca7d8f1157e1ec18e9775d49bd2/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/alexandre/.gradle/caches/8.9/transforms/a0cac903959f620471cdd69b15d1c071/transformed/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/alexandre/.gradle/caches/8.9/transforms/a0cac903959f620471cdd69b15d1c071/transformed/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/alexandre/.gradle/caches/8.9/transforms/dc5631d3515d9ad64426b5d0fee89ec0/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/alexandre/.gradle/caches/8.9/transforms/dc5631d3515d9ad64426b5d0fee89ec0/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/alexandre/.gradle/caches/8.9/transforms/489a9465d0176db6911e8848817a7630/transformed/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/alexandre/.gradle/caches/8.9/transforms/489a9465d0176db6911e8848817a7630/transformed/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/alexandre/.gradle/caches/8.9/transforms/d2fbcc51686c1cf81989f60398d309f4/transformed/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/alexandre/.gradle/caches/8.9/transforms/d2fbcc51686c1cf81989f60398d309f4/transformed/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
 	android:targetSdkVersion
-		INJECTED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml
+		INJECTED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/AndroidManifest.xml
+		INJECTED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from [:arsdk] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/arsdk/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-67
+ADDED from [:arsdk] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/arsdk/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-67
 	android:name
-		ADDED from [:arsdk] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/arsdk/intermediates/merged_manifest/debug/AndroidManifest.xml:7:22-64
+		ADDED from [:arsdk] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/arsdk/intermediates/merged_manifest/debug/AndroidManifest.xml:7:22-64
 uses-permission#android.permission.CHANGE_WIFI_MULTICAST_STATE
-ADDED from [:arsdk] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/arsdk/intermediates/merged_manifest/debug/AndroidManifest.xml:13:5-86
-MERGED from [:libARDiscovery] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARDiscovery/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-86
-MERGED from [:libARDiscovery] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARDiscovery/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-86
+ADDED from [:arsdk] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/arsdk/intermediates/merged_manifest/debug/AndroidManifest.xml:13:5-86
+MERGED from [:libARDiscovery] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARDiscovery/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-86
+MERGED from [:libARDiscovery] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARDiscovery/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-86
 	android:name
-		ADDED from [:arsdk] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/arsdk/intermediates/merged_manifest/debug/AndroidManifest.xml:13:22-83
+		ADDED from [:arsdk] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/arsdk/intermediates/merged_manifest/debug/AndroidManifest.xml:13:22-83
 uses-permission#android.permission.REORDER_TASKS
-ADDED from [:libARDiscovery] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARDiscovery/intermediates/merged_manifest/debug/AndroidManifest.xml:12:5-72
+ADDED from [:libARDiscovery] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARDiscovery/intermediates/merged_manifest/debug/AndroidManifest.xml:12:5-72
 	android:name
-		ADDED from [:libARDiscovery] /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARDiscovery/intermediates/merged_manifest/debug/AndroidManifest.xml:12:22-69
+		ADDED from [:libARDiscovery] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/libARDiscovery/intermediates/merged_manifest/debug/AndroidManifest.xml:12:22-69

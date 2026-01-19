@@ -1,36 +1,36 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery/AndroidManifest.xml:2:1-12:12
-INJECTED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery/AndroidManifest.xml:2:1-12:12
+ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery/AndroidManifest.xml:2:1-12:12
+INJECTED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery/AndroidManifest.xml:2:1-12:12
 	package
-		INJECTED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery/AndroidManifest.xml
+		INJECTED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery/AndroidManifest.xml
 	android:versionName
-		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery/AndroidManifest.xml:4:5-30
+		ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery/AndroidManifest.xml:4:5-30
 	xmlns:android
-		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery/AndroidManifest.xml:2:11-69
+		ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery/AndroidManifest.xml:2:11-69
 	android:versionCode
-		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery/AndroidManifest.xml:3:5-28
+		ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery/AndroidManifest.xml:3:5-28
 uses-permission#android.permission.BLUETOOTH_ADMIN
-ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery/AndroidManifest.xml:6:5-74
+ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery/AndroidManifest.xml:6:5-74
 	android:name
-		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery/AndroidManifest.xml:6:22-71
+		ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery/AndroidManifest.xml:6:22-71
 uses-permission#android.permission.CHANGE_WIFI_MULTICAST_STATE
-ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery/AndroidManifest.xml:7:5-85
+ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery/AndroidManifest.xml:7:5-85
 	android:name
-		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery/AndroidManifest.xml:7:22-83
+		ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery/AndroidManifest.xml:7:22-83
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery/AndroidManifest.xml:8:5-76
+ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery/AndroidManifest.xml:8:5-76
 	android:name
-		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery/AndroidManifest.xml:8:22-73
+		ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery/AndroidManifest.xml:8:22-73
 uses-permission#android.permission.REORDER_TASKS
-ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery/AndroidManifest.xml:10:5-72
+ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery/AndroidManifest.xml:10:5-72
 	android:name
-		ADDED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery/AndroidManifest.xml:10:22-69
+		ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery/AndroidManifest.xml:10:22-69
 uses-sdk
-INJECTED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery/AndroidManifest.xml
-INJECTED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery/AndroidManifest.xml
+INJECTED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery/AndroidManifest.xml
+INJECTED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery/AndroidManifest.xml
+		INJECTED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery/AndroidManifest.xml
+		INJECTED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery/AndroidManifest.xml

@@ -21,11 +21,11 @@
         android:layout_marginStart="5px">
 
         <FrameLayout
-            android:layout_width="640px"
+            android:layout_width="800px"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true"
             android:id="@+id/mainLayout"
-            android:layout_height="480px"
+            android:layout_height="600px"
             android:elevation="12dp">
 
         </FrameLayout>
@@ -49,8 +49,8 @@
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true"
             android:id="@+id/animationLayout"
-            android:layout_width="640px"
-            android:layout_height="480px"
+            android:layout_width="800px"
+            android:layout_height="600px"
             android:elevation="24dp">
         </FrameLayout>
 

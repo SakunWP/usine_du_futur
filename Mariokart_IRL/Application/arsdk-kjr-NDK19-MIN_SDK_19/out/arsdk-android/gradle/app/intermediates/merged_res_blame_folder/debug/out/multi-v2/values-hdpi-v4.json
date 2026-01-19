@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "fr.enseeiht.superjumpingsumokart.app-mergeDebugResources-8:/values-hdpi-v4/values-hdpi-v4.xml",
+            "outputFile": "fr.enseeiht.superjumpingsumokart.app-mergeDebugResources-7:/values-hdpi-v4/values-hdpi-v4.xml",
             "map": [
                 {
-                    "source": "/home/duiot3/.gradle/caches/8.9/transforms/bb0cd374fe6c3cebfdb37f219339299a/transformed/appcompat-1.0.0/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "source": "/home/alexandre/.gradle/caches/8.9/transforms/bb0cd374fe6c3cebfdb37f219339299a/transformed/appcompat-1.0.0/res/values-hdpi-v4/values-hdpi-v4.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
