@@ -49,7 +49,7 @@ public class Drone {
     }
 
     public setFuel(int fuel){
-        this.fuel = Math.max(0, Math.min(100, this.fuel));
+        this.fuel = Math.max(0, Math.min(100, fuel));
     }
 
     public void refillFuel(int amount) {
