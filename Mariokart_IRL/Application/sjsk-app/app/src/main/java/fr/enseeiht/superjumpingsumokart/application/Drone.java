@@ -48,7 +48,7 @@ public class Drone {
         return this.fuel;
     }
 
-    public setFuel(int fuel){
+    public void setFuel(int fuel){
         this.fuel = Math.max(0, Math.min(100, fuel));
     }
 
