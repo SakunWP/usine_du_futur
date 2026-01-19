@@ -160,7 +160,7 @@ public class DroneController implements ARDeviceControllerListener, ARDeviceCont
                 }
                 if (decrease > 0){
                     Drone.setFuel(Drone.getFuel() - decrease);
-                    Log.d(DRONE_CONTROLLER_TAG, "Fuel decreased by "+decrease+". Current fuel: "+DRONE.getFuel());
+                    Log.d(DRONE_CONTROLLER_TAG, "Fuel decreased by "+decrease+". Current fuel: "+Drone.getFuel());
                 }
                 fuelHandler.postDelayed(this, 1000); // relance toutes les secondes.
             }
