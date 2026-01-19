@@ -12,6 +12,7 @@ import android.os.Vibrator;
 import android.util.Log;
 import android.widget.Toast;
 import android.os.Handler;
+import android.os.Looper;
 
 import com.parrot.arsdk.arcommands.ARCOMMANDS_JUMPINGSUMO_ANIMATIONS_SIMPLEANIMATION_ID_ENUM;
 import com.parrot.arsdk.arcontroller.*;
