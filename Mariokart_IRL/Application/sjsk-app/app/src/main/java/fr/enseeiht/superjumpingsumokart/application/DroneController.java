@@ -119,13 +119,14 @@ public class DroneController implements ARDeviceControllerListener, ARDeviceCont
             }else{
                 speedForward = (movingForward) ? NORMAL_SPEED : NEG_NORMAL_SPEED;
             }
-
+            Log.d(DRONE_CONTROLLER_TAG,"vitesse : "+speedForward);
             currentSpeed = speedForward;
             //Update the speed if the drone is moving forward
-            deviceController.getFeatureJumpingSumo().setPilotingPCMDSpeed(speedForward);
+            //deviceController.getFeatureJumpingSumo().setPilotingPCMDSpeed(speedForward);
+            Log.d(DRONE_CONTROLLER_TAG,"vitesse env : "+speedForward);
 
             //Re-run the handler after 1 second
-            periodicSpeedHandler.postDelayed(this,1000);
+            //periodicSpeedHandler.postDelayed(this,1000);
         }
     };
 
@@ -154,6 +155,7 @@ public class DroneController implements ARDeviceControllerListener, ARDeviceCont
             @Override
             public void run() {
                 GUI_GAME.updateFuelUI(DRONE.getFuel());
+                Log.d(DRONE_CONTROLLER_TAG, "Fuel: "+DRONE.getFuel()+"\n");
                 uiUpdateHandler.postDelayed(this, 500); // relance toutes les 500ms.
             }
         };
@@ -170,7 +172,7 @@ public class DroneController implements ARDeviceControllerListener, ARDeviceCont
                     decrease = 8;
                 }
                 if (decrease > 0){
-                    DRONE.setFuel(DRONE.getFuel() - decrease);
+                    DRONE.setFuel(DRONE.getFuel() - 0);
                     Log.d(DRONE_CONTROLLER_TAG, "Fuel decreased by "+decrease+". Current fuel: "+DRONE.getFuel());
                 }
                 fuelHandler.postDelayed(this, 1000); // relance toutes les secondes.
@@ -339,10 +341,10 @@ public class DroneController implements ARDeviceControllerListener, ARDeviceCont
         Log.d(DRONE_CONTROLLER_TAG, "MOVE FORWARD order received !");
         if (deviceController != null && started) {
             movingForward = true;
-            Log.d(DRONE_CONTROLLER_TAG, "MOVE FORWARD order received !");
-            //deviceController.getFeatureJumpingSumo().setPilotingPCMDSpeed(NORMAL_SPEED);
+            Log.d(DRONE_CONTROLLER_TAG, "MOVE FORWARD order received ! speed:"+NORMAL_SPEED);
+            deviceController.getFeatureJumpingSumo().setPilotingPCMDSpeed(NORMAL_SPEED);
             //start the periodic speed handler.
-            periodicSpeedHandler.post(periodicSpeedRunnable);
+           periodicSpeedHandler.post(periodicSpeedRunnable);
         }
     }
 

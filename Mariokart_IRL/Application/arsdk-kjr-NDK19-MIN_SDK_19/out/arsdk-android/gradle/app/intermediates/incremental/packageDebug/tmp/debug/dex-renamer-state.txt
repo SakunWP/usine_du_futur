@@ -1,4 +1,4 @@
-#Mon Jan 19 20:58:11 CET 2026
+#Tue Jan 20 09:51:14 CET 2026
 base.0=/home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/app/intermediates/dex/debug/mergeDexDebug/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

@@ -278,6 +278,8 @@ public class GUIGame extends Activity implements GameListener {
     private Sensor accelerometerSensor;
     private SensorEventListener accelerometerListener;
 
+
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         // Initializes the GUI from layout file
