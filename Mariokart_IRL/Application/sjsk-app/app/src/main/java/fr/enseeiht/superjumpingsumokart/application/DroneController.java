@@ -270,9 +270,11 @@ public class DroneController implements ARDeviceControllerListener, ARDeviceCont
         if (deviceController != null && started) {
             Log.d(DRONE_CONTROLLER_TAG, "MOVE FORWARD order received !");
             byte speed = getSpeedBasedOnFuel();
+            Log.d(DRONE_CONTROLLER_TAG, "speed is "+ speed);
             deviceController.getFeatureJumpingSumo().setPilotingPCMDSpeed(speed);
             // Consume fuel based on the actual speed used
             DRONE.consumeFuel(speed);
+            Log.d(DRONE_CONTROLLER_TAG, "Fuel consumed, new fuel value is : "+ DRONE.getCurrentFuel());
         }
     }
 

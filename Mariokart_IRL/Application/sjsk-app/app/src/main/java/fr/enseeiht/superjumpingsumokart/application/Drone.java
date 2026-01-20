@@ -185,6 +185,8 @@ public class Drone {
             } else if (speed == 10) {
                 consumption = FUEL_CONSUMPTION_REDUCED; // 2
             }
+
+            Log.d("consumption = "+ consumption);
             currentFuel = Math.max(currentFuel - consumption, 0);
             this.outOfFuel = (currentFuel == 0);
         }
