@@ -1,6 +1,8 @@
 package fr.enseeiht.superjumpingsumokart.application;
 
 
+import android.util.Log;
+
 import fr.enseeiht.superjumpingsumokart.application.items.*;
 
 import fr.enseeiht.superjumpingsumokart.arpack.DetectionTask;
@@ -12,6 +14,8 @@ import fr.enseeiht.superjumpingsumokart.arpack.DetectionTask;
  */
 
 public class Drone {
+
+    private final static String DRONE_TAG = "Drone_jet";
 
     /**
      * The current item the drone has.
@@ -185,6 +189,7 @@ public class Drone {
             } else if (speed == 10) {
                 consumption = FUEL_CONSUMPTION_REDUCED; // 2
             }
+            Log.d(DRONE_TAG,"consumption= "+ consumption);
             currentFuel = Math.max(currentFuel - consumption, 0);
             this.outOfFuel = (currentFuel == 0);
         }

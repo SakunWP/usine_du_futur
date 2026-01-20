@@ -22,6 +22,7 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.content.SharedPreferences;
@@ -258,6 +259,7 @@ public class GUIGame extends Activity implements GameListener {
     private FrameLayout mainLayout, animationLayout, sendTrapAnim;
     private TextView lapsTextView, checkpointTextView, lmsTextView, fuelGaugeTextView;
     private SurfaceView cameraView;
+    private ProgressBar fuelGauge;
 
     private GLSurfaceView glView;
 
@@ -370,6 +372,7 @@ public class GUIGame extends Activity implements GameListener {
         lapsTextView = (TextView) findViewById(R.id.lapsTextView);
         lmsTextView = (TextView) findViewById(R.id.lmsTextView);
         fuelGaugeTextView = (TextView) findViewById(R.id.fuelGaugeTextView);
+        fuelGauge = (ProgressBar) findViewById(R.id.fuelGauge);
 
         // Defines action listeners
         turnLeftBtn.setOnTouchListener(new View.OnTouchListener() {
@@ -835,7 +838,7 @@ public class GUIGame extends Activity implements GameListener {
         if (controller != null && fuelGaugeTextView != null) {
             int fuelLevel = controller.getDrone().getCurrentFuel();
             fuelGaugeTextView.setText(String.format("Fuel: %d%%", fuelLevel));
-            
+            fuelGauge.setProgress(fuelLevel);
             // Change color based on fuel level
             if (fuelLevel > 50) {
                 fuelGaugeTextView.setTextColor(getResources().getColor(android.R.color.holo_green_light));

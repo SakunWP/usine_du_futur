@@ -316,7 +316,6 @@ public class Game implements BluetoothCommunicationListener, GUIGameListener {
         checkReadyAndStartRace();
     }
 
-    @Override
     public void onPlayerEntersPitStop() {
         Log.d(GAME_TAG, "Player enters pit stop");
         for (GameListener gl : GAME_LISTENERS) {
@@ -324,7 +323,7 @@ public class Game implements BluetoothCommunicationListener, GUIGameListener {
         }
     }
 
-    @Override
+
     public void onPlayerExitsPitStop() {
         Log.d(GAME_TAG, "Player exits pit stop");
         for (GameListener gl : GAME_LISTENERS) {
@@ -332,14 +331,14 @@ public class Game implements BluetoothCommunicationListener, GUIGameListener {
         }
     }
 
-    @Override
+
     public void onFuelLevelChanged(int fuelLevel) {
         for (GameListener gl : GAME_LISTENERS) {
             gl.onFuelLevelChanged(fuelLevel);
         }
     }
 
-    @Override
+
     public void onCriticalFuel() {
         Log.d(GAME_TAG, "Critical fuel level reached");
         for (GameListener gl : GAME_LISTENERS) {
