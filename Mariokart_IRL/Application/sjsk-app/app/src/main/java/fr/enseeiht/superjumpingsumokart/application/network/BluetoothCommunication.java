@@ -254,7 +254,7 @@ public final class BluetoothCommunication extends Thread implements GameListener
                 Log.d(BLUETOOTH_COMMUNICATION_TAG, "Fuel level update received");
                 if (msgSplit.length >= 2) {
                     try {
-                        float fuelLevel = Float.parseFloat(msgSplit[1]);
+                        int fuelLevel = Integer.parseInt(msgSplit[1]);
                         for (BluetoothCommunicationListener listener : this.BLUETOOTH_COMMUNICATION_LISTENERS) {
                             if (listener instanceof Game) {
                                 ((Game) listener).onFuelLevelChanged(fuelLevel);
@@ -439,9 +439,9 @@ public final class BluetoothCommunication extends Thread implements GameListener
     }
 
     @Override
-    public void onFuelLevelChanged(float fuelLevel) {
+    public void onFuelLevelChanged(int fuelLevel) {
         Log.d(BLUETOOTH_COMMUNICATION_TAG, "onFuelLevelChanged called with level: " + fuelLevel);
-        String dataString = "fuelLevel/" + String.format("%.1f", fuelLevel);
+        String dataString = "fuelLevel/" + fuelLevel;
         byte[] dataBytes = dataString.getBytes(Charset.forName("UTF-8"));
         write(dataBytes);
     }

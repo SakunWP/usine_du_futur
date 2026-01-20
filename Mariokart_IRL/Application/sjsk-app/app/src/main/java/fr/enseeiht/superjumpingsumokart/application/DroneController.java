@@ -62,6 +62,10 @@ public class DroneController implements ARDeviceControllerListener, ARDeviceCont
     private final static byte NO_SPEED = (byte) 0;
     private final static byte NORMAL_SPEED = (byte) 20;
     private final static byte NEG_NORMAL_SPEED = (byte) -20;
+    private final static byte REDUCED_SPEED = (byte) 10;
+    private final static byte NEG_REDUCED_SPEED = (byte) -10;
+    private final static byte EMPTY_SPEED = (byte) 5;
+    private final static byte NEG_EMPTY_SPEED = (byte) -5;
     private final static byte FAST_SPEED = (byte) 40;
     private final static byte NEG_FAST_SPEED = (byte) -40;
     private final static byte BOOST_SPEED = (byte) 100;
@@ -241,23 +245,48 @@ public class DroneController implements ARDeviceControllerListener, ARDeviceCont
     }
 
     /**
-     * Makes the drone go forward with the constant speed.
+     * Calculates the appropriate speed based on fuel level.
+     * - NORMAL_SPEED (20) when fuel > 10
+     * - REDUCED_SPEED (10) when 0 < fuel <= 10
+     * - EMPTY_SPEED (5) when fuel = 0 (immobile)
+     * @return the speed constant to use for forward movement
+     */
+    private byte getSpeedBasedOnFuel() {
+        int currentFuel = DRONE.getCurrentFuel();
+        if (currentFuel > 10) {
+            return NORMAL_SPEED;
+        } else if (currentFuel > 0) {
+            return REDUCED_SPEED;
+        } else {
+            return EMPTY_SPEED; // Immobile when out of fuel
+        }
+    }
+
+    /**
+     * Makes the drone go forward with speed based on fuel level.
      */
     public void moveForward() {
         Log.d(DRONE_CONTROLLER_TAG, "MOVE FORWARD order received !");
         if (deviceController != null && started) {
             Log.d(DRONE_CONTROLLER_TAG, "MOVE FORWARD order received !");
-            deviceController.getFeatureJumpingSumo().setPilotingPCMDSpeed(NORMAL_SPEED);
+            byte speed = getSpeedBasedOnFuel();
+            deviceController.getFeatureJumpingSumo().setPilotingPCMDSpeed(speed);
+            // Consume fuel based on the actual speed used
+            DRONE.consumeFuel(speed);
         }
     }
 
     /**
-     *  Makes the drone go backward with the constant speed.
+     *  Makes the drone go backward with speed based on fuel level.
      */
     public void moveBackward() {
         if (deviceController != null && running) {
             Log.d(DRONE_CONTROLLER_TAG, "MOVE BACKWARD order received !");
-            deviceController.getFeatureJumpingSumo().setPilotingPCMDSpeed(NEG_NORMAL_SPEED);
+            byte speed = getSpeedBasedOnFuel();
+            byte negSpeed = (byte) -speed;
+            deviceController.getFeatureJumpingSumo().setPilotingPCMDSpeed(negSpeed);
+            // Consume fuel based on the actual speed used
+            DRONE.consumeFuel(speed);
         }
     }
 

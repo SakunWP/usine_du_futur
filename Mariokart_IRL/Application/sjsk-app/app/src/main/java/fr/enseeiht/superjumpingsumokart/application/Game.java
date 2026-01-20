@@ -333,7 +333,7 @@ public class Game implements BluetoothCommunicationListener, GUIGameListener {
     }
 
     @Override
-    public void onFuelLevelChanged(float fuelLevel) {
+    public void onFuelLevelChanged(int fuelLevel) {
         for (GameListener gl : GAME_LISTENERS) {
             gl.onFuelLevelChanged(fuelLevel);
         }

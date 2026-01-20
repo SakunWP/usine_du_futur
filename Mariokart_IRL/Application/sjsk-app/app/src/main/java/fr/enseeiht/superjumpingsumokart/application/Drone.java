@@ -34,24 +34,29 @@ public class Drone {
     private DetectionTask.Symbol lastMarkerSeen;
 
     /**
-     * The maximum fuel capacity of the drone.
+     * The maximum fuel capacity of the drone (integer: 0-100).
      */
-    private static final float MAX_FUEL = 100.0f;
+    private static final int MAX_FUEL = 100;
 
     /**
-     * The current fuel level of the drone.
+     * The current fuel level of the drone (0-100).
      */
-    private float currentFuel;
+    private int currentFuel;
 
     /**
-     * The fuel consumption rate per unit of speed.
+     * Fuel consumption at normal speed (NORMAL_SPEED = 20).
      */
-    private static final float FUEL_CONSUMPTION_RATE = 0.5f;
+    private static final int FUEL_CONSUMPTION_NORMAL = 5;
 
     /**
-     * The fuel refill rate per time unit.
+     * Fuel consumption at reduced speed (REDUCED_SPEED = 10).
      */
-    private static final float FUEL_REFILL_RATE = 2.0f;
+    private static final int FUEL_CONSUMPTION_REDUCED = 2;
+
+    /**
+     * The fuel refill rate per time unit when in pit stop.
+     */
+    private static final int FUEL_REFILL_RATE = 5;
 
     /**
      * Boolean to check if the drone is currently in a pit stop.
@@ -59,9 +64,14 @@ public class Drone {
     private boolean inPitStop = false;
 
     /**
-     * The speed threshold below which the drone cannot move when fuel is critical.
+     * The threshold below which the drone gets reduced speed (10 fuel).
      */
-    private static final float CRITICAL_FUEL_THRESHOLD = 10.0f;
+    private static final int CRITICAL_FUEL_THRESHOLD = 10;
+
+    /**
+     * Boolean to check if the drone is out of fuel (0 fuel).
+     */
+    private boolean outOfFuel = false;
 
     /**
      * Constructor for the class {@link Drone}.
@@ -135,10 +145,10 @@ public class Drone {
     }
 
     /**
-     * Get the current fuel level of the drone.
-     * @return the current fuel level.
+     * Get the current fuel level of the drone (0-100).
+     * @return the current fuel level as integer.
      */
-    public float getCurrentFuel() {
+    public int getCurrentFuel() {
         return currentFuel;
     }
 
@@ -146,32 +156,43 @@ public class Drone {
      * Get the fuel level as a percentage (0-100).
      * @return the fuel percentage.
      */
-    public float getFuelPercentage() {
-        return (currentFuel / MAX_FUEL) * 100.0f;
+    public int getFuelPercentage() {
+        return (currentFuel * 100) / MAX_FUEL;
     }
 
     /**
      * Set the current fuel level of the drone.
-     * @param fuel the fuel level to set.
+     * @param fuel the fuel level to set (0-100).
      */
-    public void setCurrentFuel(float fuel) {
+    public void setCurrentFuel(int fuel) {
         this.currentFuel = Math.min(fuel, MAX_FUEL);
-        this.currentFuel = Math.max(this.currentFuel, 0.0f);
+        this.currentFuel = Math.max(this.currentFuel, 0);
+        this.outOfFuel = (this.currentFuel == 0);
     }
 
     /**
-     * Consume fuel based on the drone's speed.
-     * @param speed the current speed of the drone.
+     * Consume fuel based on the drone's current speed state.
+     * - Normal speed (20) consumes 5 fuel per update
+     * - Reduced speed (10) consumes 2 fuel per update
+     * - Out of fuel (0) consumes 0
+     * @param speed the current speed of the drone (20, 10, or 5).
      */
-    public void consumeFuel(float speed) {
+    public void consumeFuel(byte speed) {
         if (!inPitStop && currentFuel > 0) {
-            float consumption = speed * FUEL_CONSUMPTION_RATE;
-            currentFuel = Math.max(currentFuel - consumption, 0.0f);
+            int consumption = 0;
+            if (speed == 20) {
+                consumption = FUEL_CONSUMPTION_NORMAL; // 5
+            } else if (speed == 10) {
+                consumption = FUEL_CONSUMPTION_REDUCED; // 2
+            }
+            currentFuel = Math.max(currentFuel - consumption, 0);
+            this.outOfFuel = (currentFuel == 0);
         }
     }
 
     /**
      * Refill fuel when the drone is in a pit stop.
+     * Increases fuel by 5 per update when stationary in a pit stop.
      */
     public void refillFuel() {
         if (inPitStop && currentFuel < MAX_FUEL) {
@@ -180,19 +201,21 @@ public class Drone {
     }
 
     /**
-     * Check if the drone can move at full speed.
-     * @return true if the drone has enough fuel, false otherwise.
+     * Check if the drone can move at full speed (20).
+     * Below critical threshold (10), speed is reduced to 10.
+     * At zero fuel, drone is stopped.
+     * @return true if fuel > CRITICAL_FUEL_THRESHOLD, false otherwise.
      */
     public boolean canMoveAtFullSpeed() {
         return currentFuel > CRITICAL_FUEL_THRESHOLD;
     }
 
     /**
-     * Check if the drone has no fuel at all.
+     * Check if the drone has no fuel at all (0 fuel).
      * @return true if the drone is out of fuel, false otherwise.
      */
     public boolean isOutOfFuel() {
-        return currentFuel <= 0.0f;
+        return currentFuel == 0;
     }
 
     /**

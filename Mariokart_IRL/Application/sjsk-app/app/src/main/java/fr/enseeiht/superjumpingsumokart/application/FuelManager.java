@@ -31,7 +31,7 @@ public class FuelManager {
     /**
      * Last fuel level to detect changes.
      */
-    private float lastFuelLevel;
+    private int lastFuelLevel;
 
     /**
      * Current pit stop marker if any.
@@ -42,6 +42,11 @@ public class FuelManager {
      * Boolean indicating if the drone was refueling last frame.
      */
     private boolean wasRefuelingLastFrame;
+
+    /**
+     * Velocity threshold to detect immobility (for pit stop detection).
+     */
+    private static final float IMMOBILITY_THRESHOLD = 0.5f;
 
     /**
      * Constructor for FuelManager.
@@ -59,9 +64,13 @@ public class FuelManager {
     /**
      * Update fuel consumption based on current drone speed.
      * This should be called regularly during the game loop.
-     * @param speed the current speed of the drone (0-100).
+     * Speed-based consumption model:
+     * - 5 units/frame at NORMAL_SPEED (20)
+     * - 2 units/frame at REDUCED_SPEED (10)
+     * - 0 units/frame at EMPTY_SPEED (5)
+     * @param speed the current speed of the drone (20, 10, or 5).
      */
-    public void updateFuelConsumption(float speed) {
+    public void updateFuelConsumption(byte speed) {
         if (drone != null && game != null) {
             // Consume fuel based on speed
             drone.consumeFuel(speed);
@@ -117,18 +126,18 @@ public class FuelManager {
 
     /**
      * Check if fuel level has changed significantly and notify listeners.
+     * Works with integer fuel model (0-100).
      */
     private void checkFuelLevelChange() {
-        float currentFuel = drone.getCurrentFuel();
-        float fuelPercentage = (currentFuel / 100.0f) * 100.0f; // Assuming max fuel is normalized
+        int currentFuel = drone.getCurrentFuel();
 
-        // Notify on fuel level change (every 1% change)
-        if (Math.abs(currentFuel - lastFuelLevel) >= 1.0f) {
+        // Notify on fuel level change
+        if (currentFuel != lastFuelLevel) {
             lastFuelLevel = currentFuel;
-            game.onFuelLevelChanged(fuelPercentage);
+            game.onFuelLevelChanged(currentFuel);
 
-            // Check for critical fuel
-            if (!drone.canMoveAtFullSpeed() && currentFuel <= 10.0f) {
+            // Check for critical fuel (below 10)
+            if (!drone.canMoveAtFullSpeed() && currentFuel <= 10 && currentFuel > 0) {
                 game.onCriticalFuel();
             }
         }

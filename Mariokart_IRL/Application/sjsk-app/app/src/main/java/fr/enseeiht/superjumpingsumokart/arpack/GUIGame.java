@@ -771,7 +771,7 @@ public class GUIGame extends Activity implements GameListener {
     }
 
     @Override
-    public void onFuelLevelChanged(float fuelLevel) {
+    public void onFuelLevelChanged(int fuelLevel) {
         // Update fuel gauge UI on next GUI update
         GUI_GAME_HANDLER.sendEmptyMessage(GUIGame.FUEL_GAUGE_UPDATE);
     }
@@ -829,17 +829,17 @@ public class GUIGame extends Activity implements GameListener {
     }
 
     /**
-     * Update the fuel gauge display on the UI.
+     * Update the fuel gauge display on the UI with integer fuel model (0-100).
      */
     private void updateFuelGaugeUI() {
         if (controller != null && fuelGaugeTextView != null) {
-            float fuelPercentage = controller.getDrone().getFuelPercentage();
-            fuelGaugeTextView.setText(String.format("Fuel: %.1f%%", fuelPercentage));
+            int fuelLevel = controller.getDrone().getCurrentFuel();
+            fuelGaugeTextView.setText(String.format("Fuel: %d%%", fuelLevel));
             
             // Change color based on fuel level
-            if (fuelPercentage > 50) {
+            if (fuelLevel > 50) {
                 fuelGaugeTextView.setTextColor(getResources().getColor(android.R.color.holo_green_light));
-            } else if (fuelPercentage > 20) {
+            } else if (fuelLevel > 20) {
                 fuelGaugeTextView.setTextColor(getResources().getColor(android.R.color.holo_orange_light));
             } else {
                 fuelGaugeTextView.setTextColor(getResources().getColor(android.R.color.holo_red_light));

@@ -63,9 +63,9 @@ public interface GameListener {
 
     /**
      * Called when the fuel level changes.
-     * @param fuelLevel the new fuel level (0-100).
+     * @param fuelLevel the new fuel level (0-100 integer).
      */
-    void onFuelLevelChanged(float fuelLevel);
+    void onFuelLevelChanged(int fuelLevel);
 
     /**
      * Called when the fuel reaches a critical level.
