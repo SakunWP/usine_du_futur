@@ -72,8 +72,10 @@ public class FuelManager {
      */
     public void updateFuelConsumption(byte speed) {
         if (drone != null && game != null) {
+            Log.d(FUEL_MANAGER_TAG, " fuel a consumer");
             // Consume fuel based on speed
             drone.consumeFuel(speed);
+            Log.d(FUEL_MANAGER_TAG, " fuel consumé" + drone.getCurrentFuel() );
 
             // Refuel if in pit stop
             if (drone.isInPitStop()) {
