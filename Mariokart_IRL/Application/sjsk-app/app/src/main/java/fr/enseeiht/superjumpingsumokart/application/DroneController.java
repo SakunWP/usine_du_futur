@@ -61,8 +61,8 @@ public class DroneController implements ARDeviceControllerListener, ARDeviceCont
     private boolean savedImageValue;
 
     // Speed constants
-    private final static byte NO_SPEED = (byte) 0;
-    private final static byte SLOW_SPEED = (byte) 5;
+    private final static byte NO_SPEED = (byte) 10;
+    private final static byte SLOW_SPEED = (byte) 10;
     private final static byte NEG_SLOW_SPEED = (byte) -5;
     private final static byte NORMAL_SPEED = (byte) 20;
     private final static byte NEG_NORMAL_SPEED = (byte) -20;
@@ -136,6 +136,8 @@ public class DroneController implements ARDeviceControllerListener, ARDeviceCont
 
     private Runnable fuelRunnable;
     private Handler fuelHandler;
+    private Runnable uiUpdateRunnable;
+    private Handler uiUpdateHandler;
 
     /**
      * Default Constructor of the class {@link DroneController}.
@@ -147,6 +149,15 @@ public class DroneController implements ARDeviceControllerListener, ARDeviceCont
         GUI_GAME = guiGame;
         DRONE = new Drone();
 
+        this.uiUpdateHandler = new Handler(Looper.getMainLooper());
+        this.uiUpdateRunnable = new Runnable() {
+            @Override
+            public void run() {
+                GUI_GAME.updateFuelUI(DRONE.getFuel());
+                uiUpdateHandler.postDelayed(this, 500); // relance toutes les 500ms.
+            }
+        };
+
         // handler pour la gestion du fuel
         this.fuelHandler = new Handler(Looper.getMainLooper());
         this.fuelRunnable = new Runnable(){
@@ -154,9 +165,9 @@ public class DroneController implements ARDeviceControllerListener, ARDeviceCont
             public void run(){
                 int decrease = 0;
                 if (Math.abs(currentSpeed) == NORMAL_SPEED){
-                    decrease = 2;
-                } else if (Math.abs(currentSpeed) == FAST_SPEED){
                     decrease = 5;
+                } else if (Math.abs(currentSpeed) == FAST_SPEED){
+                    decrease = 8;
                 }
                 if (decrease > 0){
                     DRONE.setFuel(DRONE.getFuel() - decrease);
@@ -294,6 +305,7 @@ public class DroneController implements ARDeviceControllerListener, ARDeviceCont
         ARCONTROLLER_ERROR_ENUM errCode = ARCONTROLLER_ERROR_ENUM.ARCONTROLLER_OK;
         if (deviceController != null && !started) {
             fuelHandler.post(fuelRunnable);
+            uiUpdateHandler.post(uiUpdateRunnable);
             errCode = deviceController.start();
         }
         return errCode;
@@ -312,6 +324,7 @@ public class DroneController implements ARDeviceControllerListener, ARDeviceCont
                 if (deviceController != null && started && running) {
                     stopMotion();
                     fuelHandler.removeCallbacks(fuelRunnable);
+                    uiUpdateHandler.removeCallbacks(uiUpdateRunnable);
                     deviceController.stop();
                 }
             }
@@ -535,15 +548,12 @@ public class DroneController implements ARDeviceControllerListener, ARDeviceCont
             case ARCONTROLLER_DEVICE_STATE_RUNNING :
                 running = true;
                 deviceController.getFeatureJumpingSumo().sendMediaStreamingVideoEnable((byte) 1);
-                GUI_GAME.GUI_GAME_HANDLER.sendEmptyMessage(GUIGame.CONTROLLER_RUNNING);
                 break;
             case ARCONTROLLER_DEVICE_STATE_STOPPING :
                 deviceController.getFeatureJumpingSumo().sendMediaStreamingVideoEnable((byte) 0);
                 deviceController.getFeatureJumpingSumo().setPilotingPCMDFlag((byte) 0);
                 running = false;
-                if (!(error.compareTo(ARCONTROLLER_ERROR_ENUM.ARCONTROLLER_OK) == 0)) {
-                    GUI_GAME.GUI_GAME_HANDLER.sendEmptyMessage(GUIGame.CONTROLLER_STOPPING_ON_ERROR);
-                }
+
                 break;
             case ARCONTROLLER_DEVICE_STATE_PAUSED :
                 running = false;

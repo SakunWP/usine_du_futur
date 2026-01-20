@@ -785,6 +785,7 @@ drawable bomb
 drawable bottom_arrow
 drawable cloud
 drawable flash
+drawable fuel_gauge_gradient
 drawable giantmushroom
 drawable goldmushroom
 drawable greenshell
@@ -905,6 +906,7 @@ id fill_horizontal
 id fill_vertical
 id forever
 id form
+id fuelGauge
 id group_divider
 id guiGameFrameLayout
 id home

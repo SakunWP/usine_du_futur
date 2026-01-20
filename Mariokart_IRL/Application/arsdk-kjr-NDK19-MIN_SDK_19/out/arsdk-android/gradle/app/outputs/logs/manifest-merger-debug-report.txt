@@ -123,6 +123,7 @@ ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app
 application
 ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:22:5-62:19
 INJECTED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:22:5-62:19
+INJECTED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:22:5-62:19
 MERGED from [:arsdk] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/arsdk/intermediates/merged_manifest/debug/AndroidManifest.xml:15:5-19:19
 MERGED from [:arsdk] /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/out/arsdk-android/gradle/arsdk/intermediates/merged_manifest/debug/AndroidManifest.xml:15:5-19:19
 MERGED from [androidx.core:core:1.0.0] /home/alexandre/.gradle/caches/8.9/transforms/ceedfb6c56cc62f95d84d359628722e0/transformed/core-1.0.0/AndroidManifest.xml:22:5-89
@@ -137,6 +138,8 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/alexa
 		ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:27:9-35
 	android:label
 		ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:26:9-41
+	android:testOnly
+		INJECTED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml
 	android:largeHeap
 		ADDED from /home/alexandre/Bureau/usine_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/AndroidManifest.xml:28:9-33
 	android:icon

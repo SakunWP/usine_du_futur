@@ -208,6 +208,7 @@ drawable bomb
 drawable bottom_arrow
 drawable cloud
 drawable flash
+drawable fuel_gauge_gradient
 drawable giantmushroom
 drawable goldmushroom
 drawable greenshell
@@ -253,6 +254,7 @@ id deleteMarkerBtn
 id existingCircuitsList
 id exitBtn
 id form
+id fuelGauge
 id guiGameFrameLayout
 id id
 id imageButton

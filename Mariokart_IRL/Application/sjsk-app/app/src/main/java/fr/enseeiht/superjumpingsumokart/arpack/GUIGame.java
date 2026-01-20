@@ -4,8 +4,11 @@ import android.app.Activity;
 import android.content.pm.ActivityInfo;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.PixelFormat;
 import android.graphics.drawable.AnimationDrawable;
+import android.graphics.drawable.ClipDrawable;
+import android.graphics.drawable.GradientDrawable;
 import android.hardware.Sensor;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
@@ -14,6 +17,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
@@ -22,6 +26,7 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.content.SharedPreferences;
@@ -250,6 +255,7 @@ public class GUIGame extends Activity implements GameListener {
     private FrameLayout mainLayout, animationLayout, sendTrapAnim;
     private TextView lapsTextView, checkpointTextView, lmsTextView;
     private SurfaceView cameraView;
+    private ProgressBar fuelGaugeView;
 
     private GLSurfaceView glView;
 
@@ -361,6 +367,8 @@ public class GUIGame extends Activity implements GameListener {
         checkpointTextView = (TextView) findViewById(R.id.checkpointTextView);
         lapsTextView = (TextView) findViewById(R.id.lapsTextView);
         lmsTextView = (TextView) findViewById(R.id.lmsTextView);
+        fuelGaugeView = (ProgressBar) findViewById(R.id.fuelGauge);
+        fuelGaugeView.setProgress(controller.getDrone().getFuel());
 
         // Defines action listeners
         turnLeftBtn.setOnTouchListener(new View.OnTouchListener() {
@@ -536,15 +544,13 @@ public class GUIGame extends Activity implements GameListener {
         BluetoothCommunication.deleteInstance();
     }
 
-        /**
+    /**
      * Update the fuel UI with the current fuel level.
      * @param fuelLevel the current fuel level (0-100).
      */
     public void updateFuelUI(int fuelLevel) {
-        // Exemple : mettre à jour une ProgressBar ou un TextView
         if (fuelGaugeView != null) {
             fuelGaugeView.setProgress(fuelLevel);
-            Log.d("GUIGame", "Fuel updated: " + fuelLevel + "%");
         }
     }
 

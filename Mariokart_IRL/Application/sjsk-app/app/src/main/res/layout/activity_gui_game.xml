@@ -38,9 +38,9 @@
             android:elevation="0dp">
 
             <SurfaceView
+                android:id="@+id/cameraSurfaceView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/cameraSurfaceView"
                 android:clickable="false" />
 
         </FrameLayout>
@@ -90,9 +90,9 @@
             android:layout_above="@+id/turnRightBtn"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="236dp"
-            android:layout_marginEnd="21dp"
-            android:layout_marginBottom="11dp"
+            android:layout_marginTop="238dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="9dp"
             android:background="@drawable/top_arrow"
             app:srcCompat="@drawable/top_arrow" />
 
@@ -222,5 +222,19 @@
             android:padding="10dp"
             android:scaleType="fitXY"
             android:src="@drawable/pngwing_com" />
+
+        <ProgressBar
+            android:id="@+id/fuelGauge"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="26dp"
+            android:layout_height="224dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="587dp"
+            android:layout_marginTop="65dp"
+            android:max="100"
+            android:progress="50"
+            android:progressDrawable="@drawable/fuel_gauge_gradient"
+            android:rotation="0" />
+
     </RelativeLayout>
 </FrameLayout>
