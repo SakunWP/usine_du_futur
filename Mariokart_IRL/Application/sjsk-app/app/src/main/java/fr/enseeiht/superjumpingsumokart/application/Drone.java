@@ -60,7 +60,7 @@ public class Drone {
     /**
      * The fuel refill rate per time unit when in pit stop.
      */
-    private static final int FUEL_REFILL_RATE = 5;
+    private static final int FUEL_REFILL_RATE = 25;
 
     /**
      * Boolean to check if the drone is currently in a pit stop.
@@ -76,6 +76,8 @@ public class Drone {
      * Boolean to check if the drone is out of fuel (0 fuel).
      */
     private boolean outOfFuel = false;
+
+    private boolean isMoving = false;
 
     /**
      * Constructor for the class {@link Drone}.
@@ -190,8 +192,9 @@ public class Drone {
                 consumption = FUEL_CONSUMPTION_REDUCED; // 2
             }
             Log.d(DRONE_TAG,"consumption= "+ consumption);
-            currentFuel = Math.max(currentFuel - consumption, 0);
-            this.outOfFuel = (currentFuel == 0);
+            setCurrentFuel(currentFuel-consumption);
+        } else {
+            Log.d(DRONE_TAG,"No fuel consumption. pit stop : "+ inPitStop + " currentFuel: "+ currentFuel);
         }
     }
 
@@ -200,8 +203,8 @@ public class Drone {
      * Increases fuel by 5 per update when stationary in a pit stop.
      */
     public void refillFuel() {
-        if (inPitStop && currentFuel < MAX_FUEL) {
-            currentFuel = Math.min(currentFuel + FUEL_REFILL_RATE, MAX_FUEL);
+        if (inPitStop && currentFuel < MAX_FUEL && !this.isMoving) {
+            setCurrentFuel(currentFuel+FUEL_REFILL_RATE);
         }
     }
 
@@ -246,4 +249,13 @@ public class Drone {
         this.currentFuel = MAX_FUEL;
         this.inPitStop = false;
     }
+
+    public boolean getmoving(){
+        return this.isMoving;
+    }
+
+    public void setmoving(boolean moving){
+        this.isMoving = moving;
+    }
+
 }

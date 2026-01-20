@@ -838,6 +838,7 @@ public class GUIGame extends Activity implements GameListener {
         if (controller != null && fuelGaugeTextView != null) {
             int fuelLevel = controller.getDrone().getCurrentFuel();
             fuelGaugeTextView.setText(String.format("Fuel: %d%%", fuelLevel));
+            Log.d(GUI_GAME_TAG, "Updating fuel gauge: " + fuelLevel + "%");
             fuelGauge.setProgress(fuelLevel);
             // Change color based on fuel level
             if (fuelLevel > 50) {

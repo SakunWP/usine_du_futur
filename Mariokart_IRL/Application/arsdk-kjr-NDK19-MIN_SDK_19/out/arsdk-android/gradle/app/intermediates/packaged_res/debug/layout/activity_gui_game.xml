@@ -208,6 +208,19 @@
             android:layout_alignParentTop="true"
             android:layout_toStartOf="@+id/mainLayout" />
 
+        <TextView
+            android:text="Fuel: 100.0%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fuelGaugeTextView"
+            android:textAllCaps="false"
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="20sp"
+            android:layout_marginTop="50dp"
+            android:textStyle="normal|bold"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/mainLayout" />
+
         <ImageButton
             android:id="@+id/imageButton"
             android:layout_width="60dp"
@@ -222,5 +235,26 @@
             android:padding="10dp"
             android:scaleType="fitXY"
             android:src="@drawable/pngwing_com" />
+
+        <ProgressBar
+            android:id="@+id/fuelGauge"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="224dp"
+            android:layout_height="24dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="469dp"
+            android:layout_marginTop="180dp"
+            android:accessibilityLiveRegion="polite"
+            android:alpha="100"
+            android:duplicateParentState="false"
+            android:fadeScrollbars="false"
+            android:max="100"
+            android:progress="40"
+            android:rotation="-90"
+            android:scrollbarTrackHorizontal="@null" />
+
+
+
+
     </RelativeLayout>
 </FrameLayout>

@@ -275,6 +275,7 @@ public class DroneController implements ARDeviceControllerListener, ARDeviceCont
             // Consume fuel based on the actual speed used
             DRONE.consumeFuel(speed);
             Log.d(DRONE_CONTROLLER_TAG, "fuel:" + DRONE.getCurrentFuel());
+            DRONE.setmoving(true);
         }
     }
 
@@ -289,6 +290,7 @@ public class DroneController implements ARDeviceControllerListener, ARDeviceCont
             deviceController.getFeatureJumpingSumo().setPilotingPCMDSpeed(negSpeed);
             // Consume fuel based on the actual speed used
             DRONE.consumeFuel(speed);
+            DRONE.setmoving(true);
         }
     }
 
@@ -299,6 +301,7 @@ public class DroneController implements ARDeviceControllerListener, ARDeviceCont
         if (deviceController != null && running) {
             Log.d(DRONE_CONTROLLER_TAG, "TURN LEFT order received !");
             deviceController.getFeatureJumpingSumo().setPilotingPCMDTurn(NEG_FAST_SPEED);
+            DRONE.setmoving(true);
         }
     }
 
@@ -309,6 +312,7 @@ public class DroneController implements ARDeviceControllerListener, ARDeviceCont
         if (deviceController != null && running) {
             Log.d(DRONE_CONTROLLER_TAG, "TURN RIGHT order received !");
             deviceController.getFeatureJumpingSumo().setPilotingPCMDTurn(FAST_SPEED);
+            DRONE.setmoving(true);
         }
     }
 
@@ -319,6 +323,7 @@ public class DroneController implements ARDeviceControllerListener, ARDeviceCont
         if (deviceController != null && running) {
             Log.d(DRONE_CONTROLLER_TAG, "STOP MOTION order received !");
             deviceController.getFeatureJumpingSumo().setPilotingPCMDSpeed(NO_SPEED);
+            DRONE.setmoving(false);
         }
     }
 
@@ -329,6 +334,7 @@ public class DroneController implements ARDeviceControllerListener, ARDeviceCont
         if (deviceController != null && running) {
             Log.d(DRONE_CONTROLLER_TAG, "STOP ROTATION order received !");
             deviceController.getFeatureJumpingSumo().setPilotingPCMDTurn(NO_SPEED);
+            
         }
     }
 
@@ -515,6 +521,24 @@ public class DroneController implements ARDeviceControllerListener, ARDeviceCont
     @Override
     public void onFrameTimeout(ARDeviceController deviceController) {
         //Nothing to do.
+    }
+
+    public void onEnterPit() {
+        DRONE.setInPitStop(true);
+        Log.d(DRONE_CONTROLLER_TAG,"enter PIT");
+        DRONE.refillFuel();
+        Log.d(DRONE_CONTROLLER_TAG,"just Refilled");
+        // while (!DRONE.getmoving()) {
+        //     Log.d(DRONE_CONTROLLER_TAG,"start loop");
+        //     // sleep(1000);
+        //     DRONE.refillFuel();
+        //     Log.d(DRONE_CONTROLLER_TAG,"just Refilled");
+        // }
+    }
+
+    public void onLeavingPit(){
+        DRONE.setInPitStop(false);
+        Log.d(DRONE_CONTROLLER_TAG,"leaving PIT");
     }
 
 }

@@ -7,16 +7,16 @@
 7    <uses-sdk android:minSdkVersion="19" />
 8
 9    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
-9-->/home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery/AndroidManifest.xml:6:5-74
-9-->/home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery/AndroidManifest.xml:6:22-71
+9-->/Users/sakunwithanage/Desktop/usine_du_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery/AndroidManifest.xml:6:5-74
+9-->/Users/sakunwithanage/Desktop/usine_du_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery/AndroidManifest.xml:6:22-71
 10    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
-10-->/home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery/AndroidManifest.xml:7:5-85
-10-->/home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery/AndroidManifest.xml:7:22-83
+10-->/Users/sakunwithanage/Desktop/usine_du_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery/AndroidManifest.xml:7:5-85
+10-->/Users/sakunwithanage/Desktop/usine_du_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery/AndroidManifest.xml:7:22-83
 11    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-11-->/home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery/AndroidManifest.xml:8:5-76
-11-->/home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery/AndroidManifest.xml:8:22-73
+11-->/Users/sakunwithanage/Desktop/usine_du_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery/AndroidManifest.xml:8:5-76
+11-->/Users/sakunwithanage/Desktop/usine_du_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery/AndroidManifest.xml:8:22-73
 12    <uses-permission android:name="android.permission.REORDER_TASKS" />
-12-->/home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery/AndroidManifest.xml:10:5-72
-12-->/home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery/AndroidManifest.xml:10:22-69
+12-->/Users/sakunwithanage/Desktop/usine_du_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery/AndroidManifest.xml:10:5-72
+12-->/Users/sakunwithanage/Desktop/usine_du_futur/Mariokart_IRL/Application/arsdk-kjr-NDK19-MIN_SDK_19/packages/libARDiscovery/AndroidManifest.xml:10:22-69
 13
 14</manifest>

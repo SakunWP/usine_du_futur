@@ -101,7 +101,7 @@ public class FuelManager {
      * This should be called when a marker is detected.
      * @param detectedMarker the marker detected by the drone.
      */
-    public void checkMarkerForPitStop(DetectionTask.Symbol detectedMarker) {
+    /*public void checkMarkerForPitStop(DetectionTask.Symbol detectedMarker) {
         if (detectedMarker == null || Circuit.getInstance() == null) {
             return;
         }
@@ -125,6 +125,7 @@ public class FuelManager {
             }
         }
     }
+        */
 
     /**
      * Check if fuel level has changed significantly and notify listeners.
@@ -159,7 +160,7 @@ public class FuelManager {
      * Get the current pit stop marker if any.
      * @return the current pit stop marker, or null if not in a pit stop.
      */
-    public DetectionTask.Symbol getCurrentPitStopMarker() {
-        return currentPitStopMarker;
-    }
+    //public DetectionTask.Symbol getCurrentPitStopMarker() {
+        //return currentPitStopMarker;
+    //}
 }

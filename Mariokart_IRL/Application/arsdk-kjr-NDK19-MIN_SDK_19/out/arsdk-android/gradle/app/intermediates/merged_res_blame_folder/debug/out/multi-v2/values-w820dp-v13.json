@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "fr.enseeiht.superjumpingsumokart.app-mergeDebugResources-8:/values-w820dp-v13/values-w820dp-v13.xml",
+            "outputFile": "fr.enseeiht.superjumpingsumokart.app-mergeDebugResources-7:/values-w820dp-v13/values-w820dp-v13.xml",
             "map": [
                 {
-                    "source": "/home/duiot3/Documents/Stage_Mathis_Rigaud_2025/Test_KJR/sjsk-app/app/src/main/res/values-w820dp/dimens.xml",
+                    "source": "/Users/sakunwithanage/Desktop/usine_du_futur/Mariokart_IRL/Application/sjsk-app/app/src/main/res/values-w820dp/dimens.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "4",

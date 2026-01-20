@@ -253,6 +253,8 @@ id deleteMarkerBtn
 id existingCircuitsList
 id exitBtn
 id form
+id fuelGauge
+id fuelGaugeTextView
 id guiGameFrameLayout
 id id
 id imageButton
@@ -297,7 +299,6 @@ layout row_marker
 layout wifi_connection_item
 layout wifi_connections_list
 mipmap ic_launcher
-raw rbgatonv21
 string ToggleMode
 string add_marker_btn
 string app_name

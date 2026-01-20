@@ -905,6 +905,8 @@ id fill_horizontal
 id fill_vertical
 id forever
 id form
+id fuelGauge
+id fuelGaugeTextView
 id group_divider
 id guiGameFrameLayout
 id home
@@ -1081,7 +1083,6 @@ layout wifi_connection_item
 layout wifi_connections_list
 menu options
 mipmap ic_launcher
-raw rbgatonv21
 string ToggleMode
 string abc_action_bar_home_description
 string abc_action_bar_up_description

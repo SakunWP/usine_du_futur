@@ -42,6 +42,8 @@ public class DetectionTask extends AsyncTask<byte[], Void, Boolean> {
     private static long timeSinceLastHiro;
     private static long timeSinceLastKanji;
     private static long timeSinceLastMinion;
+    private static long timeSinceLastPit;
+    private static boolean isBananaVisible = false;
 
     /**
      * Default constructor of {@link DetectionTask} (Romain Verset, Jorge Gutierrez - 08/02/2017).
@@ -107,6 +109,20 @@ public class DetectionTask extends AsyncTask<byte[], Void, Boolean> {
                                 Log.d(DETECTION_TASK_TAG, "Got a Magic FakeBox");
                             }
                             break;
+
+                        case B:
+                            isBananaVisible = true; // ← Marquer que la banane est visible
+                            Log.d(DETECTION_TASK_TAG, "Distance to marker BANANA (Pit) : " + Float.toString(-ARToolKit.getInstance().queryMarkerTransformation(id)[14]));
+                            if (-ARToolKit.getInstance().queryMarkerTransformation(id)[14] < 350 && (SystemClock.elapsedRealtime() - timeSinceLastPit) > 2000) {
+                                timeSinceLastPit = SystemClock.elapsedRealtime();
+                                GUI_GAME.getController().onEnterPit();
+                                Log.d(DETECTION_TASK_TAG, "Pit detecté, box box");
+                            }else{
+                                isBananaVisible = false;
+                                GUI_GAME.getController().onLeavingPit();
+                            }
+
+
                         default:
                             Log.d(DETECTION_TASK_TAG, "Distance to marker " + s.name().concat(" ") + Float.toString(-ARToolKit.getInstance().queryMarkerTransformation(id)[14]));
                             if (-ARToolKit.getInstance().queryMarkerTransformation(id)[14] < 300) {
