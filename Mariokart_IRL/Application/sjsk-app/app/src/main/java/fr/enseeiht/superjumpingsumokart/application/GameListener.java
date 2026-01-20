@@ -51,4 +51,24 @@ public interface GameListener {
      */
     void onStartRace();
 
+    /**
+     * Called when the player enters a pit stop for refueling.
+     */
+    void onPlayerEntersPitStop();
+
+    /**
+     * Called when the player exits a pit stop.
+     */
+    void onPlayerExitsPitStop();
+
+    /**
+     * Called when the fuel level changes.
+     * @param fuelLevel the new fuel level (0-100).
+     */
+    void onFuelLevelChanged(float fuelLevel);
+
+    /**
+     * Called when the fuel reaches a critical level.
+     */
+    void onCriticalFuel();
 }

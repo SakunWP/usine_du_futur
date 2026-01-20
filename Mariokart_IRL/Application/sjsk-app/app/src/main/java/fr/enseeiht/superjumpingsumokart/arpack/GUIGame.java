@@ -121,6 +121,9 @@ public class GUIGame extends Activity implements GameListener {
                     admb.stop(); // We need to stop the animation before starting in order to make it repeatable.
                     admb.start();
                     break;
+                case FUEL_GAUGE_UPDATE:
+                    updateFuelGaugeUI();
+                    break;
                 default:
                     break;
             }
@@ -193,6 +196,11 @@ public class GUIGame extends Activity implements GameListener {
     public final static int ANIMATE_MAGIC_BOX = 12;
 
     /**
+     * Message for {@link GUIGame#GUI_GAME_HANDLER}.
+     */
+    public final static int FUEL_GAUGE_UPDATE = 13;
+
+    /**
      * The width of the frames of the Jumping Sumo Camera.
      */
     final static int VIDEO_WIDTH = 640;
@@ -248,7 +256,7 @@ public class GUIGame extends Activity implements GameListener {
     private ImageButton sendTrapBtn;
 
     private FrameLayout mainLayout, animationLayout, sendTrapAnim;
-    private TextView lapsTextView, checkpointTextView, lmsTextView;
+    private TextView lapsTextView, checkpointTextView, lmsTextView, fuelGaugeTextView;
     private SurfaceView cameraView;
 
     private GLSurfaceView glView;
@@ -361,6 +369,7 @@ public class GUIGame extends Activity implements GameListener {
         checkpointTextView = (TextView) findViewById(R.id.checkpointTextView);
         lapsTextView = (TextView) findViewById(R.id.lapsTextView);
         lmsTextView = (TextView) findViewById(R.id.lmsTextView);
+        fuelGaugeTextView = (TextView) findViewById(R.id.fuelGaugeTextView);
 
         // Defines action listeners
         turnLeftBtn.setOnTouchListener(new View.OnTouchListener() {
@@ -749,6 +758,30 @@ public class GUIGame extends Activity implements GameListener {
         controller.setRunning(true);
     }
 
+    @Override
+    public void onPlayerEntersPitStop() {
+        Log.d(GUI_GAME_TAG, "Pit stop entered - showing pit stop UI");
+        Toast.makeText(GUIGame.this, "Refueling... Stay in position!", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onPlayerExitsPitStop() {
+        Log.d(GUI_GAME_TAG, "Pit stop exited");
+        Toast.makeText(GUIGame.this, "Pit stop exited", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onFuelLevelChanged(float fuelLevel) {
+        // Update fuel gauge UI on next GUI update
+        GUI_GAME_HANDLER.sendEmptyMessage(GUIGame.FUEL_GAUGE_UPDATE);
+    }
+
+    @Override
+    public void onCriticalFuel() {
+        Log.d(GUI_GAME_TAG, "Critical fuel level - performance degraded");
+        Toast.makeText(GUIGame.this, "CRITICAL FUEL! Find a pit stop!", Toast.LENGTH_SHORT).show();
+    }
+
     public void registerGyroscopeListener(SensorEventListener gyroscopeListener){
         this.gyroscopeListener = gyroscopeListener;
         this.sensorManager.registerListener(gyroscopeListener,gyroscopeSensor,SensorManager.SENSOR_DELAY_FASTEST);
@@ -773,7 +806,6 @@ public class GUIGame extends Activity implements GameListener {
         }
     }
 
-    // Partie Gyroscope / ModeButton
     public void onImageButtonClick(View view) {
 
         // Toggle the state
@@ -794,5 +826,24 @@ public class GUIGame extends Activity implements GameListener {
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putBoolean("usingGyro", usingGyro);
         editor.apply();
+    }
+
+    /**
+     * Update the fuel gauge display on the UI.
+     */
+    private void updateFuelGaugeUI() {
+        if (controller != null && fuelGaugeTextView != null) {
+            float fuelPercentage = controller.getDrone().getFuelPercentage();
+            fuelGaugeTextView.setText(String.format("Fuel: %.1f%%", fuelPercentage));
+            
+            // Change color based on fuel level
+            if (fuelPercentage > 50) {
+                fuelGaugeTextView.setTextColor(getResources().getColor(android.R.color.holo_green_light));
+            } else if (fuelPercentage > 20) {
+                fuelGaugeTextView.setTextColor(getResources().getColor(android.R.color.holo_orange_light));
+            } else {
+                fuelGaugeTextView.setTextColor(getResources().getColor(android.R.color.holo_red_light));
+            }
+        }
     }
 }

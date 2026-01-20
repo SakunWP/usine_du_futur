@@ -315,4 +315,35 @@ public class Game implements BluetoothCommunicationListener, GUIGameListener {
     public void onCircuitReceived() {
         checkReadyAndStartRace();
     }
+
+    @Override
+    public void onPlayerEntersPitStop() {
+        Log.d(GAME_TAG, "Player enters pit stop");
+        for (GameListener gl : GAME_LISTENERS) {
+            gl.onPlayerEntersPitStop();
+        }
+    }
+
+    @Override
+    public void onPlayerExitsPitStop() {
+        Log.d(GAME_TAG, "Player exits pit stop");
+        for (GameListener gl : GAME_LISTENERS) {
+            gl.onPlayerExitsPitStop();
+        }
+    }
+
+    @Override
+    public void onFuelLevelChanged(float fuelLevel) {
+        for (GameListener gl : GAME_LISTENERS) {
+            gl.onFuelLevelChanged(fuelLevel);
+        }
+    }
+
+    @Override
+    public void onCriticalFuel() {
+        Log.d(GAME_TAG, "Critical fuel level reached");
+        for (GameListener gl : GAME_LISTENERS) {
+            gl.onCriticalFuel();
+        }
+    }
 }
