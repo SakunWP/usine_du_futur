@@ -381,6 +381,8 @@ public final class BluetoothCommunication extends Thread implements GameListener
         Log.d(BLUETOOTH_COMMUNICATION_TAG, "onStartRace sent to the other phone");
     }
 
+
+    //TODO: Clean
     @Override
     public void onCriticalFuel() {
         // Nothing to do here
@@ -396,9 +398,6 @@ public final class BluetoothCommunication extends Thread implements GameListener
         // Nothing to do here
     }
 
-    /**
-     * Called when the player exits a pit stop.
-     */
     @Override
     public void onPlayerExitsPitStop(){
         // Nothing to do here

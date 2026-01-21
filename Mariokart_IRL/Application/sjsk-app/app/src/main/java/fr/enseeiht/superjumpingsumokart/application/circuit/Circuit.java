@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 import fr.enseeiht.superjumpingsumokart.application.items.Item;
-import fr.enseeiht.superjumpingsumokart.application.items.PitStop;
 import fr.enseeiht.superjumpingsumokart.arpack.DetectionTask;
 
 /**
@@ -40,11 +39,6 @@ public class Circuit {
     private HashMap<DetectionTask.Symbol,Item> objects;
 
     /**
-     * The pit stops (fuel refill stations) on the circuit.
-     */
-    private HashMap<DetectionTask.Symbol, PitStop> pitStops;
-
-    /**
      * Singleton instance of {@link Circuit}.
      */
     private static Circuit circuitInstance;
@@ -59,7 +53,6 @@ public class Circuit {
         this.checkPointToCheck = checkPointToCheck;
         this.markers = new ArrayList<>();
         this.objects = new HashMap<>();
-        this.pitStops = new HashMap<>();
     }
 
     /**
@@ -96,42 +89,6 @@ public class Circuit {
      * @param symbol The symbol of the marker associated to the object to remove.
      */
     public void removeObject(DetectionTask.Symbol symbol){ this.objects.remove(symbol); }
-
-    /**
-     * Adds a pit stop to the circuit.
-     * @param symbol The marker symbol of the pit stop.
-     * @param pitStop The pit stop to add.
-     */
-    public void addPitStop(DetectionTask.Symbol symbol, PitStop pitStop) {
-        this.pitStops.put(symbol, pitStop);
-    }
-
-    /**
-     * Gets a pit stop by its marker symbol.
-     * @param symbol The marker symbol of the pit stop.
-     * @return The pit stop, or null if not found.
-     */
-    public PitStop getPitStop(DetectionTask.Symbol symbol) {
-        return this.pitStops.get(symbol);
-    }
-
-    /**
-     * Check if a marker corresponds to a pit stop.
-     * @param symbol The marker symbol to check.
-     * @return true if the marker is a pit stop, false otherwise.
-     */
-    public boolean isPitStop(DetectionTask.Symbol symbol) {
-        return this.pitStops.containsKey(symbol);
-    }
-
-    /**
-     * Get all pit stops on the circuit.
-     * @return HashMap of all pit stops.
-     */
-    public HashMap<DetectionTask.Symbol, PitStop> getPitStops() {
-        return pitStops;
-    }
-
 
     //   GETTER AND SETTER
 
