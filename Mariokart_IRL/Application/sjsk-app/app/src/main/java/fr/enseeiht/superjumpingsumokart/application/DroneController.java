@@ -275,6 +275,8 @@ public class DroneController implements ARDeviceControllerListener, ARDeviceCont
             // Consume fuel based on the actual speed used
             DRONE.consumeFuel(speed);
             Log.d(DRONE_CONTROLLER_TAG, "fuel:" + DRONE.getCurrentFuel());
+            Log.d(DRONE_CONTROLLER_TAG, "calling guigame to update fuel gauge");
+            GUI_GAME.updateFuelGaugeUI();
             DRONE.setmoving(true);
         }
     }
@@ -290,6 +292,8 @@ public class DroneController implements ARDeviceControllerListener, ARDeviceCont
             deviceController.getFeatureJumpingSumo().setPilotingPCMDSpeed(negSpeed);
             // Consume fuel based on the actual speed used
             DRONE.consumeFuel(speed);
+            Log.d(DRONE_CONTROLLER_TAG, "calling guigame to update fuel gauge");
+            GUI_GAME.updateFuelGaugeUI();
             DRONE.setmoving(true);
         }
     }
