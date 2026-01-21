@@ -846,7 +846,7 @@ public class GUIGame extends Activity implements GameListener {
                 if (fuelLevel <= 10) {
                     fuelGauge.setProgressTintList(getResources().getColorStateList(android.R.color.holo_red_dark));
                 } else {
-                    fuelGauge.setProgressTintList(getResources().getColorStateList(android.R.color.holo_yellow_dark));
+                    fuelGauge.setProgressTintList(getResources().getColorStateList(android.R.color.holo_green_dark));
                 }
             } else {
                 Log.d(GUI_GAME_TAG, "Fuel gauge ProgressBar is null!");

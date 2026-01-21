@@ -234,45 +234,6 @@ public final class BluetoothCommunication extends Thread implements GameListener
                     listener.onSecondStartRace();
                 }
                 break;
-            case "entersPitStop":
-                Log.d(BLUETOOTH_COMMUNICATION_TAG, "Other player enters pit stop");
-                for (BluetoothCommunicationListener listener : this.BLUETOOTH_COMMUNICATION_LISTENERS) {
-                    if (listener instanceof Game) {
-                        ((Game) listener).onPlayerEntersPitStop();
-                    }
-                }
-                break;
-            case "exitsPitStop":
-                Log.d(BLUETOOTH_COMMUNICATION_TAG, "Other player exits pit stop");
-                for (BluetoothCommunicationListener listener : this.BLUETOOTH_COMMUNICATION_LISTENERS) {
-                    if (listener instanceof Game) {
-                        ((Game) listener).onPlayerExitsPitStop();
-                    }
-                }
-                break;
-            case "fuelLevel":
-                Log.d(BLUETOOTH_COMMUNICATION_TAG, "Fuel level update received");
-                if (msgSplit.length >= 2) {
-                    try {
-                        int fuelLevel = Integer.parseInt(msgSplit[1]);
-                        for (BluetoothCommunicationListener listener : this.BLUETOOTH_COMMUNICATION_LISTENERS) {
-                            if (listener instanceof Game) {
-                                ((Game) listener).onFuelLevelChanged(fuelLevel);
-                            }
-                        }
-                    } catch (NumberFormatException e) {
-                        Log.e(BLUETOOTH_COMMUNICATION_TAG, "Invalid fuel level format: " + msgSplit[1]);
-                    }
-                }
-                break;
-            case "criticalFuel":
-                Log.d(BLUETOOTH_COMMUNICATION_TAG, "Other player has critical fuel");
-                for (BluetoothCommunicationListener listener : this.BLUETOOTH_COMMUNICATION_LISTENERS) {
-                    if (listener instanceof Game) {
-                        ((Game) listener).onCriticalFuel();
-                    }
-                }
-                break;
         }
     }
 
@@ -421,36 +382,25 @@ public final class BluetoothCommunication extends Thread implements GameListener
     }
 
     @Override
-    public void onPlayerEntersPitStop() {
-        Log.d(BLUETOOTH_COMMUNICATION_TAG, "onPlayerEntersPitStop called");
-        String dataString = "entersPitStop";
-        byte[] dataBytes = dataString.getBytes(Charset.forName("UTF-8"));
-        write(dataBytes);
-        Log.d(BLUETOOTH_COMMUNICATION_TAG, "onPlayerEntersPitStop sent to the other phone");
-    }
-
-    @Override
-    public void onPlayerExitsPitStop() {
-        Log.d(BLUETOOTH_COMMUNICATION_TAG, "onPlayerExitsPitStop called");
-        String dataString = "exitsPitStop";
-        byte[] dataBytes = dataString.getBytes(Charset.forName("UTF-8"));
-        write(dataBytes);
-        Log.d(BLUETOOTH_COMMUNICATION_TAG, "onPlayerExitsPitStop sent to the other phone");
-    }
-
-    @Override
-    public void onFuelLevelChanged(int fuelLevel) {
-        Log.d(BLUETOOTH_COMMUNICATION_TAG, "onFuelLevelChanged called with level: " + fuelLevel);
-        String dataString = "fuelLevel/" + fuelLevel;
-        byte[] dataBytes = dataString.getBytes(Charset.forName("UTF-8"));
-        write(dataBytes);
-    }
-
-    @Override
     public void onCriticalFuel() {
-        Log.d(BLUETOOTH_COMMUNICATION_TAG, "onCriticalFuel called");
-        String dataString = "criticalFuel";
-        byte[] dataBytes = dataString.getBytes(Charset.forName("UTF-8"));
-        write(dataBytes);
+        // Nothing to do here
+    }
+
+    @Override
+    public void onFuelLevelChanged(int fuel){
+        // Nothing to do here
+    }
+
+    @Override
+    public void onPlayerEntersPitStop() {
+        // Nothing to do here
+    }
+
+    /**
+     * Called when the player exits a pit stop.
+     */
+    @Override
+    public void onPlayerExitsPitStop(){
+        // Nothing to do here
     }
 }

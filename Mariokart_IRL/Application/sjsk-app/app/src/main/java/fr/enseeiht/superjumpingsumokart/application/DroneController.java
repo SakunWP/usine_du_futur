@@ -466,6 +466,7 @@ public class DroneController implements ARDeviceControllerListener, ARDeviceCont
                 GUI_GAME.GUI_GAME_HANDLER.sendEmptyMessage(GUIGame.CONTROLLER_RUNNING);
                 break;
             case ARCONTROLLER_DEVICE_STATE_STOPPING :
+                Log.d(DRONE_CONTROLLER_TAG, "Stopping controller"+error);
                 deviceController.getFeatureJumpingSumo().sendMediaStreamingVideoEnable((byte) 0);
                 deviceController.getFeatureJumpingSumo().setPilotingPCMDFlag((byte) 0);
                 running = false;
@@ -531,7 +532,7 @@ public class DroneController implements ARDeviceControllerListener, ARDeviceCont
         DRONE.setInPitStop(true);
         Log.d(DRONE_CONTROLLER_TAG,"enter PIT");
         DRONE.refillFuel();
-        GUI_GAME.updateFuelGaugeUI();
+        // GUI_GAME.updateFuelGaugeUI();
         Log.d(DRONE_CONTROLLER_TAG,"just Refilled");
         // while (!DRONE.getmoving()) {
         //     Log.d(DRONE_CONTROLLER_TAG,"start loop");
