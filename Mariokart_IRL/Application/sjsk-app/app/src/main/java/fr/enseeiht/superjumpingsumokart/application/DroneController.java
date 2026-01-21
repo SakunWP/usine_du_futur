@@ -531,6 +531,7 @@ public class DroneController implements ARDeviceControllerListener, ARDeviceCont
         DRONE.setInPitStop(true);
         Log.d(DRONE_CONTROLLER_TAG,"enter PIT");
         DRONE.refillFuel();
+        GUI_GAME.updateFuelGaugeUI();
         Log.d(DRONE_CONTROLLER_TAG,"just Refilled");
         // while (!DRONE.getmoving()) {
         //     Log.d(DRONE_CONTROLLER_TAG,"start loop");
