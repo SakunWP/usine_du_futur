@@ -38,21 +38,21 @@ L'objectif est d'ajouter une dimension stratégique au jeu **Super Jumping Sumo 
 ## 2. État d'avancement et limitations connues
 
 ### 2.1 Fonctionnalités implémentées
-✅ Système de jauge de carburant avec 3 états visuels (vert/jaune/rouge)
-✅ Consommation de carburant à l'appui du bouton "marche avant"
-✅ Ralentissement automatique au-dessous du seuil critique (10 unités)
-✅ Mode zigzag lorsque le carburant est à zéro
-✅ Détection du pit stop via ARTag "B"
-✅ Ravitaillement en carburant dans le pit stop (si drone immobile)
-✅ Suspension de la consommation en mode pit stop
-✅ Délai `timeSinceLastPit` pour éviter les rechargements trop rapides
+* Système de jauge de carburant avec 3 états visuels (vert/jaune/rouge)
+* Consommation de carburant à l'appui du bouton "marche avant"
+* Ralentissement automatique au-dessous du seuil critique (10 unités)
+* Mode zigzag lorsque le carburant est à zéro
+* Détection du pit stop via ARTag "B"
+* Ravitaillement en carburant dans le pit stop (si drone immobile)
+* Suspension de la consommation en mode pit stop
+* Délai `timeSinceLastPit` pour éviter les rechargements trop rapides
 
 ### 2.2 Limitations et comportements spécifiques
-⚠️ **Consommation non-continue** : Le carburant ne diminue QUE lors d'un appui sur "marche avant", pas continuellement à chaque frame. Cela signifie qu'un drone qui ne se déplace pas ne consomme pas, même s'il est en mouvement passif.
+* **Consommation non-continue** : Le carburant ne diminue QUE lors d'un appui sur "marche avant", pas continuellement à chaque frame. Cela signifie qu'un drone qui ne se déplace pas ne consomme pas, même s'il est en mouvement passif.
 
-⚠️ **Problème de détection à la sortie du pit stop** : Si le drone effectue un virage serré en quittant le pit stop et que le tag "B" n'est plus visible à distance valide, le drone reste bloqué en mode pit stop. Il ne pourra en sortir que lorsqu'il détectera à nouveau le tag à une distance suffisante.
+* **Problème de détection à la sortie du pit stop** : Si le drone effectue un virage serré en quittant le pit stop et que le tag "B" n'est plus visible à distance valide, le drone reste bloqué en mode pit stop. Il ne pourra en sortir que lorsqu'il détectera à nouveau le tag à une distance suffisante.
 
-⚠️ **Dépendance à la détection ARTag** : Tout le système de pit stop repose sur la détection fiable du tag "B". Les angles de vue, l'éclairage et la distance affectent directement le comportement.
+* **Dépendance à la détection ARTag** : Tout le système de pit stop repose sur la détection fiable du tag "B". Les angles de vue, l'éclairage et la distance affectent directement le comportement.
 
 ### 2.3 Recommandations pour les évolutions futures
 - Ajouter un mécanisme de détection de sortie alternatif (ex: basé sur la distance parcourue ou le temps écoulé)
